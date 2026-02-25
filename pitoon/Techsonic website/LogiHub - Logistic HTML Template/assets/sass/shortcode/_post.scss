@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+  27. Posts
+----------------------------------------------------------------*/
+.cs-border-blog-single{
+  height: 1px;
+  background-color: $border;
+  width: 100%;
+}
+
+.cs-single-blog-info{
+  display: flex; 
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.cs-comment-user-info{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.comment-reply{
+  margin-left: 40px;
+}
+
+.cs-blog-tag-single{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  ul{
+    li{
+      margin-bottom: 0px !important;
+    }
+  }
+}
+
+.cs-blog-tag-social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  .cs-blog-tag-social{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    .cs-blog-share{
+      ul{
+        li{
+          height: 35px;
+          width: 35px;
+        }
+      }
+    }
+  }
+}
+.cs-social-common.cs-blog-share{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-top: 0px;
+  ul{
+    li{
+      border: 1px solid $dark-bg;
+      &:last-child{
+        margin: 0px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .cs-blog-single-page{
+    .row.for-bs > *:nth-child(-n+1) {
+      padding-bottom: 50px;
+    }
+  }
+  .similar-post > *:nth-child(-n+2) {
+    padding-bottom: 30px;
+  }
+  .cs-blog-content-container{
+    .row{
+      .row.for-blog-standard > *:nth-child(-n+6) {
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.cs-blog-content-container{
+  .row{
+    .row.for-blog-standard > *:nth-child(-n+6) {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  }
+  .row > *:nth-child(-n-1){
+    margin-bottom: 40px;
+  }
+}

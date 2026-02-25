@@ -1,0 +1,251 @@
+/*--------------------------------------------------------------
+  22. Team Member
+----------------------------------------------------------------*/
+.cs-team-wrapper {
+  .cs-members-container {
+    .cs-member-item {
+      position: relative;
+      max-width: 405px;
+
+      .cs-member-img {
+        position: relative;
+        clip-path: polygon(
+          10% 0%,
+          100% 0,
+          100% 10%,
+          100% 90%,
+          90% 100%,
+          0 100%,
+          0% 90%,
+          0% 10%
+        );
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: transform 0.4s ease;
+
+        img {
+          width: 100%;
+          height: 100%;
+          transition: transform 0.4s ease;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba($color: $dark-bg, $alpha: 0.5);
+          opacity: 0;
+          transition: opacity 0.5s ease;
+          clip-path: polygon(
+            10% 0%,
+            100% 0,
+            100% 10%,
+            100% 90%,
+            90% 100%,
+            0 100%,
+            0% 90%,
+            0% 10%
+          );
+        }
+      }
+
+      .cs-member-item-content {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        height: 80px;
+        background: $white;
+        clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 11% 50%, 0% 0%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .cs-member-info {
+          margin-left: 50px;
+
+          .cs-member-designation {
+            p {
+              margin: 0px;
+            }
+          }
+        }
+      }
+      .cs-member-connect {
+        transition: all 0.4s ease;
+      }
+
+      &:hover {
+        .cs-member-img {
+          clip-path: polygon(
+            10% 0%,
+            100% 0,
+            100% 10%,
+            100% 90%,
+            90% 100%,
+            0 100%,
+            0% 90%,
+            0% 10%
+          );
+          img {
+            transform: scale(1.1) translateX(10px);
+          }
+
+          &::after {
+            opacity: 1;
+            clip-path: polygon(
+              10% 0%,
+              100% 0,
+              100% 10%,
+              100% 90%,
+              90% 100%,
+              0 100%,
+              0% 90%,
+              0% 10%
+            );
+          }
+        }
+
+        .cs-social-contact {
+          max-height: 220px;
+          opacity: 1;
+        }
+
+        .cs-member-connect {
+          transform: rotate(-90deg);
+          margin-right: 10px;
+          transition: all 0.4s ease;
+        }
+      }
+
+      .cs-social-contact {
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+          li {
+            display: inline-block;
+            margin-bottom: 1px;
+
+            a {
+              padding: 15px 15px 8px 15px;
+              background: $accent;
+              display: inline-block;
+
+              i {
+                color: $white;
+              }
+            }
+
+            &:hover a {
+              background: $white;
+
+              i {
+                color: $black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .container-fluid {
+    max-width: 1720px;
+    padding: 0px 10px;
+    margin: auto;
+    .row {
+      margin: auto;
+    }
+  }
+  &.cs-team-transparent {
+    .cs-members-container {
+      .cs-member-item {
+        .cs-member-img {
+          clip-path: inherit;
+        }
+        &::after {
+          clip-path: inherit;
+        }
+        &:hover {
+          .cs-member-img {
+            clip-path: inherit;
+            &::after {
+              clip-path: inherit;
+            }
+          }
+        }
+        .cs-member-item-content {
+          background: rgba(255, 255, 255, 0.50);
+          backdrop-filter: blur(50px);
+          .cs-member-connect{
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+  &.cs-cargo-team{
+    .home1-team-slider {
+      overflow: hidden;
+    }
+    .home1-team-slider {
+      .swiper-slide {
+        width: 320px !important;
+        margin-right: 13px !important;
+      }
+    }
+  }
+}
+
+.cs-team-wrapper.cs-team-transparent.cs-cargo-team .cs-members-container .cs-member-item .cs-member-item-content{
+  width: 250px;
+}
+
+@media screen and (max-width: 991px) {
+  .cs-team-wrapper {
+    .container-fluid {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+// Team Page Content Style
+
+.cs-raw-in-col8 > *:nth-child(-n + 4) {
+  padding-bottom: 45px;
+}
+
+.cs-raw-in-col8 > *:nth-last-child(-n-4) {
+  padding-bottom: 0;
+}
+@media screen and (max-width: 1199px) {
+  .cs-raw-in-col8 > *:nth-child(-n + 6) {
+    padding-bottom: 45px;
+  }
+
+  .cs-raw-in-col8 > *:nth-last-child(-n-2) {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cs-raw-in-col8 > *:nth-child(-n + 7) {
+    padding-bottom: 45px;
+  }
+
+  .cs-raw-in-col8 > *:nth-last-child(-n-1) {
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,163 @@
+/*--------------------------------------------------------------
+  30. About Feature
+----------------------------------------------------------------*/
+.cs-com-feature-wrapper {
+  .cs-com-feature-content {
+    max-width: 775px;
+    .cs-com-fe-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:hover{
+        .cs-feature-title{
+          h2{
+            opacity: 5;
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+    .cs-feature-title {
+        max-width: 175px;
+      h2 {
+        color: $white;
+        opacity: 0.2;
+        transition: all 0.4s ease;
+        text-shadow: -1px -1px 0 $dark-bg, 0px -1px 0 $dark-bg, 1px -1px 0 $dark-bg, 1px 0px 0 $dark-bg, 1px 1px 0 $dark-bg, 0px 1px 0 $dark-bg, -1px 1px 0 $dark-bg, -1px 0 0 $dark-bg;
+      }
+    }
+    .cs-com-fe-text {
+      max-width: 450px;
+      border-bottom: 1px solid $border;
+    }
+  }
+  .container-fluid {
+    padding-left: calc((100% - 1320px) / 2);
+  }
+  @media screen and (max-width: 1280px) {
+    .container-fluid {
+      padding-left: 10px;
+    }
+  }
+  &.cs-com-feature-for-airfreight{
+    .cs-feature-title{
+      max-width: 250px;
+    }
+  }
+  &.cs-feature-for-ocean-cargo{
+    position: relative;
+    z-index: 1;
+    .cs-oc-wcu-p{
+      max-width: 650px;
+    }
+    .cs-img-with-video{
+      .cs-video-img{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          margin-right: 10px;
+        }
+        a{
+          position: absolute;
+        }
+        .cs_round_btn{
+          min-width: 100px;
+          height: 100px;
+          background: $white;
+          color: $black;
+          &:hover{
+            background: $accent;
+            color: $white;
+            border: 1px solid $accent;
+          }
+        }
+      }
+      .cs-oc-cargo-wcu-img{
+        margin-left: 10px;
+      }
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $border;
+      clip-path: polygon(0 0, 70% 0%, 70% 100%, 0% 100%);
+      z-index: -1;
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cs-com-feature-wrapper {
+    .cs-com-feature-content {
+      max-width: 960px;
+      margin: auto;
+    }
+    .cs-com-fe-content-in{
+      margin-top: 50px;
+    }
+    .cs-com-fe-img{
+      max-width: 960px;
+      margin: auto;
+    }
+    .cs_center{
+      flex-direction: column-reverse;
+    }
+    &.cs-feature-for-ocean-cargo{
+      .cs-com-fe-content-in{
+        margin-top: 0px;
+      }
+      .cs-lg-w-control{
+        max-width: 960px;
+        margin: auto;
+      }
+      margin: auto;
+      .cs_center{
+        flex-direction: inherit;
+      }
+      .cs-img-with-video{
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cs-com-feature-wrapper {
+    .cs-com-feature-content {
+      margin: auto;
+      max-width: 720px;
+    }
+    .cs-height-60{
+      height: 50px;
+    }
+    .cs-com-fe-img {
+      max-width: 720px;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width: 730px) {
+  .cs-com-feature-wrapper {
+    .cs-com-fe-content-in{
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5); 
+      .cs-com-fe-item{
+        flex-wrap: wrap;
+      }
+    }
+    &.cs-feature-for-ocean-cargo{
+      .cs-oc-cargo-wcu-img{
+        display: none;
+      }
+      .cs-com-fe-icon{
+        display: none;
+      }
+    }
+  }
+}
+

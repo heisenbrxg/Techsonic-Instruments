@@ -1,0 +1,182 @@
+/*--------------------------------------------------------------
+  01. Basic Color Variable
+----------------------------------------------------------------*/
+
+$white: #fff;
+$black: #0A0A0A;
+$primary: #0A0A0A;
+$secondary: #4A4A4A;
+$ternary: #999696;
+$border: #ECECEC;
+$gray: #181818;
+$hrcOlor: #d9d9d9;
+$cr_banner: #f4f4f4;
+$accent: #D40511;
+$gray_sc: #F3F3F3;
+$dark-bg: #004041;
+:root {
+    --accent-color: #D40511;
+    --body-color: #4A4A4A;
+    --heading-color: #0A0A0A;
+    --primary-color: #101010;
+    --cr_banner-color: #f4f4f4;
+    --border-color: #ECECEC;
+    --common-color-white: #ffffff;
+    --common-color-black: #000000;
+    --dark-bg: #004041;
+}
+
+
+.cs_white_color,
+.cs-color-white,
+.cs_white_color_hover:hover {
+  color: $white;
+}
+
+.cs-color-black {
+  color: $black;
+}
+
+.cs-color-body{
+  color: var(--body-color)
+}
+
+.cs_ternary_color {
+  color: $ternary;
+}
+
+.cs_accent_color,
+.cs_accent_color_hover:hover {
+  color: $accent;
+}
+
+.cs_white_bg {
+  background-color: #fff;
+}
+
+.cs_gray_bg {
+  background-color: $gray;
+}
+
+.cs_gray_bg_20 {
+  background: rgba(217, 217, 217, 0.2);
+}
+
+.cs_accent_bg_1,
+.cs_accent_bg_1_hover:hover {
+  background-color: rgba($accent, 0.01);
+}
+
+.cs_accent_bg_2,
+.cs_accent_bg_2_hover:hover {
+  background-color: rgba($accent, 0.02);
+}
+
+.cs_accent_bg_3,
+.cs_accent_bg_3_hover:hover {
+  background-color: rgba($accent, 0.03);
+}
+
+.cs_accent_bg_4,
+.cs_accent_bg_4_hover:hover {
+  background-color: rgba($accent, 0.04);
+}
+
+.cs_accent_bg_5,
+.cs_accent_bg_5_hover:hover {
+  background-color: rgba($accent, 0.05);
+}
+
+.cs_accent_bg_6,
+.cs_accent_bg_6_hover:hover {
+  background-color: rgba($accent, 0.06);
+}
+
+.cs_accent_bg_7,
+.cs_accent_bg_7_hover:hover {
+  background-color: rgba($accent, 0.07);
+}
+
+.cs_accent_bg_8,
+.cs_accent_bg_8_hover:hover {
+  background-color: rgba($accent, 0.08);
+}
+
+.cs_accent_bg_9,
+.cs_accent_bg_9_hover:hover {
+  background-color: rgba($accent, 0.09);
+}
+
+.cs_accent_bg_10,
+.cs_accent_bg_10_hover:hover {
+  background-color: rgba($accent, 0.1);
+}
+
+.cs_accent_bg_15,
+.cs_accent_bg_15_hover:hover {
+  background-color: rgba($accent, 0.15);
+}
+
+.cs_accent_bg_20,
+.cs_accent_bg_20_hover:hover {
+  background-color: rgba($accent, 0.2);
+}
+
+.cs_accent_bg_25,
+.cs_accent_bg_25_hover:hover {
+  background-color: rgba($accent, 0.25);
+}
+
+.cs_accent_bg_30,
+.cs_accent_bg_30_hover:hover {
+  background-color: rgba($accent, 0.3);
+}
+
+.cs_accent_bg_35,
+.cs_accent_bg_35_hover:hover {
+  background-color: rgba($accent, 0.35);
+}
+
+.cs_accent_bg_40,
+.cs_accent_bg_40_hover:hover {
+  background-color: rgba($accent, 0.4);
+}
+
+.cs_accent_bg_50,
+.cs_accent_bg_50_hover:hover {
+  background-color: rgba($accent, 0.5);
+}
+
+.cs_accent_bg_60,
+.cs_accent_bg_60_hover:hover {
+  background-color: rgba($accent, 0.6);
+}
+
+.cs_accent_bg_70,
+.cs_accent_bg_70_hover:hover {
+  background-color: rgba($accent, 0.7);
+}
+
+.cs_accent_bg_80,
+.cs_accent_bg_80_hover:hover {
+  background-color: rgba($accent, 0.8);
+}
+
+.cs_accent_bg_90,
+.cs_accent_bg_90_hover:hover {
+  background-color: rgba($accent, 0.9);
+}
+
+.cs_accent_bg,
+.cs_accent_bg_hover:hover {
+  background-color: $accent;
+}
+
+.cs_primary_bg,
+.cs_primary_bg_hover:hover {
+  background-color: $primary;
+}
+
+.cs_gradient_bg_1 {
+  background: linear-gradient(267.18deg, #161616 0%, #080808 100%);
+}

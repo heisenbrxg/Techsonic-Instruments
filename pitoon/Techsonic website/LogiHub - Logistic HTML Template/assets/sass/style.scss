@@ -1,0 +1,83 @@
+/* 
+|......................................................................
+| Template Name: LogiHub
+| Author: Thememarch
+| Version: 1.0.0
+|--------------------------------------------------------------------------
+|--------------------------------------------------------------------------
+| TABLE OF CONTENTS:
+|--------------------------------------------------------------------------
+| 01. Basic Color Variable
+| 02. Typography
+| 03. Preloader
+| 04. Header
+| 05. Sidebar
+| 06. Footer
+| 07. Spacing
+| 08. General
+| 09. Breadcrumb
+| 10. Slider
+| 11. Video Modal
+| 12. Button
+| 13. Widget
+| 14. Hero
+| 15. Title
+| 16. Expertise Area
+| 17. About
+| 18. Services
+| 19. Clients
+| 20. Counter
+| 21. Section Form
+| 22. Team Member
+| 23. Call To Action
+| 24. Testimonial
+| 25. Project Case Study
+| 26. Blog
+| 27. Post Page
+| 28. Pricing
+| 29. Text Moving
+| 30. About Feature
+| 31. Process & Quote
+| 32. Faq
+| 33. Map Hotspot
+| 34. Contact
+| 35. Order Track
+| 36. Error Page
+ ................................................................*/
+ 
+@import "default/color_variable";
+@import "default/typography";
+@import "common/preloader";
+@import "common/header";
+@import "common/sidebar";
+@import "common/footer";
+@import "common/spacing";
+@import "common/general";
+@import "common/breadcrumb";
+@import "common/slider";
+@import "common/video-modal";
+@import "common/btn";
+@import "common/widget";
+@import "shortcode/hero";
+@import "shortcode/title";
+@import "shortcode/expertise_area";
+@import "shortcode/about";
+@import "shortcode/services";
+@import "shortcode/clients";
+@import "shortcode/counter";
+@import "shortcode/section-form";
+@import "shortcode/team"; 
+@import "shortcode/cta";
+@import "shortcode/testimonial";
+@import "shortcode/project";
+@import "shortcode/post";
+@import "shortcode/faq";
+@import "shortcode/pricing";
+@import "shortcode/text_moving";
+@import "shortcode/about_feature";
+@import "shortcode/process_quote";
+@import "shortcode/blog";
+@import "shortcode/map-hotspot";
+@import "shortcode/contact";
+@import "shortcode/order-track";
+@import "shortcode/error";

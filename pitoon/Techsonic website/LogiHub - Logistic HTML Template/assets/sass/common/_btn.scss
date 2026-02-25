@@ -1,0 +1,202 @@
+/*--------------------------------------------------------------
+  12. Button Style
+----------------------------------------------------------------*/
+button{
+  background-color: $accent;
+  color: $white;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 16px;
+  padding: 12px 40px;
+  gap: 10px;
+  border-radius: 50px;
+  border: none;
+  i{
+    line-height: 0px;
+  }
+}
+
+.cs-text_b_line {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 5px;
+  i{
+    color: $accent;
+    line-height: 0px;
+  }
+}
+
+.cs-text_b_line span {
+  display: inline-block;
+  position: relative;
+  color: $black;
+  font-family: "Radio Canada Big";
+}
+.cs-text_b_line.cs_white_color span{
+  color: $white;
+}
+.cs-text_b_line.cs_white_color i{
+  color: $white;
+}
+
+.cs-text_b_line span:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0px;
+  left: 0;
+  background-color: currentColor;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.cs-text_b_line:hover span::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+// Primary Button
+
+.cs-primary-btn {
+  background-color: $accent;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 16px;
+  padding: 12px 40px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  width: auto;
+  border-radius: 50px;
+  gap: 5px;
+  font-family: "Radio Canada Big";
+  span {
+    color: $white;
+    position: relative;
+    z-index: 111;
+    transition: all 0.5s;
+  }
+  a{
+    z-index: 5;
+  }
+a{
+  font-family: "Radio Canada Big";
+  display: flex;
+  align-items: center;
+  color: $white;
+  gap: 5px;
+  i{
+    color: white;
+    font-size: 18px;
+    line-height: 0px;
+    display: inline-block;
+  }
+}
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    visibility: hidden;
+    clip-path: polygon(0% 0%, 75% 0%, 90% 51%, 75% 100%, 0% 100%);
+    border-radius: 50px;
+    overflow: hidden;
+    background-color: $black;
+    opacity: 0.1;
+    transition: all 0.3s;
+    z-index: 1;
+  }
+  &:hover {
+    span {
+      color: $white;
+      path {
+        stroke: $white;
+      }
+      z-index: 2;
+    }
+    i{
+      color: white;
+      z-index: 2;
+    }
+    &::before {
+      right: 0;
+      visibility: visible;
+    }
+  }
+  &.white-primary-btn{
+    background: $white;
+    color: $black;
+    transition: all 0.4s ease;
+    i{
+      color: $black;
+    }
+    &:hover{
+      background: $accent;
+      color: $white;
+      transition: all 0.4s ease;
+      i{
+        color: $white;
+      }
+    }
+  }
+  &.gray-primary-btn{
+    background: $gray_sc;
+    transition: all 0.4s ease;
+    i{
+      color: $black;
+    }
+    a{
+      color: $black;
+    }
+    &:hover{
+      background: $accent;
+      transition: all 0.4s ease;
+      i{
+        color: $white;
+      }
+      a{
+        color: $white;
+      }
+    }
+  }
+}
+// Video Button Style
+.cs_round_btn {
+  position: relative;
+  overflow: hidden;
+  height: 155px;
+  min-width: 155px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $white;
+  border-radius: 50%;
+  padding: 30px 15px;
+  color: $white;
+  &:hover{
+    background: $white;
+    color: $black;
+    transition: all 0.4s ease;
+  }
+}

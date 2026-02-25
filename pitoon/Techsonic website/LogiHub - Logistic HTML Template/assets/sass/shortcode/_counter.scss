@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+  18. Counter Style
+----------------------------------------------------------------*/
+.cs-counter-wrap{
+    .cs-counter-item{
+        .cs-count-text{
+            color: $black;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .cs-counter-wrap {
+        .container {
+            .row > *:nth-child(-n+2) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .cs-counter-wrap {
+        .container {
+            .row > *:nth-child(-n+3) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

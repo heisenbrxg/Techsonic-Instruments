@@ -1,0 +1,129 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.woff2?7d4da66f210334deefae0e09eaa93c38") format("woff2"),
+url("./flaticon.woff?7d4da66f210334deefae0e09eaa93c38") format("woff"),
+url("./flaticon.eot?7d4da66f210334deefae0e09eaa93c38#iefix") format("embedded-opentype"),
+url("./flaticon.ttf?7d4da66f210334deefae0e09eaa93c38") format("truetype"),
+url("./flaticon.svg?7d4da66f210334deefae0e09eaa93c38#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "viber": "\f101",
+    "airplane": "\f102",
+    "road-freight": "\f103",
+    "ocean-freight": "\f104",
+    "verified": "\f105",
+    "supply-chain": "\f106",
+    "right-arrow": "\f107",
+    "shipping": "\f108",
+    "magnifying-glass": "\f109",
+    "down-arrow": "\f10a",
+    "facebook-app-symbol": "\f10b",
+    "twitter": "\f10c",
+    "linkedin-big-logo": "\f10d",
+    "instagram": "\f10e",
+    "left-chevron": "\f10f",
+    "left-arrow": "\f110",
+    "right-chevron": "\f111",
+    "up-right-arrow": "\f112",
+    "arrow": "\f113",
+    "cruise": "\f114",
+    "cargo-ship": "\f115",
+    "top": "\f116",
+    "logistics": "\f117",
+    "menu": "\f118",
+    "quotation": "\f119",
+    "cloud-download": "\f11a",
+);
+
+.flaticon-viber:before {
+    content: map-get($flaticon-map, "viber");
+}
+.flaticon-airplane:before {
+    content: map-get($flaticon-map, "airplane");
+}
+.flaticon-road-freight:before {
+    content: map-get($flaticon-map, "road-freight");
+}
+.flaticon-ocean-freight:before {
+    content: map-get($flaticon-map, "ocean-freight");
+}
+.flaticon-verified:before {
+    content: map-get($flaticon-map, "verified");
+}
+.flaticon-supply-chain:before {
+    content: map-get($flaticon-map, "supply-chain");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-shipping:before {
+    content: map-get($flaticon-map, "shipping");
+}
+.flaticon-magnifying-glass:before {
+    content: map-get($flaticon-map, "magnifying-glass");
+}
+.flaticon-down-arrow:before {
+    content: map-get($flaticon-map, "down-arrow");
+}
+.flaticon-facebook-app-symbol:before {
+    content: map-get($flaticon-map, "facebook-app-symbol");
+}
+.flaticon-twitter:before {
+    content: map-get($flaticon-map, "twitter");
+}
+.flaticon-linkedin-big-logo:before {
+    content: map-get($flaticon-map, "linkedin-big-logo");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}
+.flaticon-left-chevron:before {
+    content: map-get($flaticon-map, "left-chevron");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-right-chevron:before {
+    content: map-get($flaticon-map, "right-chevron");
+}
+.flaticon-up-right-arrow:before {
+    content: map-get($flaticon-map, "up-right-arrow");
+}
+.flaticon-arrow:before {
+    content: map-get($flaticon-map, "arrow");
+}
+.flaticon-cruise:before {
+    content: map-get($flaticon-map, "cruise");
+}
+.flaticon-cargo-ship:before {
+    content: map-get($flaticon-map, "cargo-ship");
+}
+.flaticon-top:before {
+    content: map-get($flaticon-map, "top");
+}
+.flaticon-logistics:before {
+    content: map-get($flaticon-map, "logistics");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-quotation:before {
+    content: map-get($flaticon-map, "quotation");
+}
+.flaticon-cloud-download:before {
+    content: map-get($flaticon-map, "cloud-download");
+}

@@ -1,0 +1,250 @@
+/*--------------------------------------------------------------
+  17. About Style
+----------------------------------------------------------------*/
+.cs-about-wrapper-1 {
+  padding-right: calc((100% - 1320px) / 2);
+  .cs-about-wrap-in {
+    position: relative;
+    min-height: 615px;
+    display: flex;
+    align-items: center;
+    .cs-about-content-wrap {
+      display: flex;
+      justify-content: end;
+      .cs-about-content-in {
+        max-width: 637px;
+        .cs-about-title {
+          margin-bottom: 20px;
+        }
+        .cs-about-para {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .cs-about-img-area {
+      position: relative;
+      .cs-about-img-over-content {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 1 !important;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px;
+        clip-path: polygon(
+          20% 0%,
+          80% 0%,
+          100% 0,
+          100% 80%,
+          80% 100%,
+          0 100%,
+          0% 80%,
+          0% 20%
+        );
+        h2 {
+          color: $white;
+        }
+        p {
+          color: $white;
+          font-family: "Radio Canada Big";
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 135%;
+        }
+      }
+    }
+  }
+  &.cs-about-2 {
+    padding-left: calc((100% - 1320px) / 2);
+    .cs-about-img-area {
+      position: absolute;
+      top: 0;
+      left: 100px;
+    }
+    .cs-about-list-wrap {
+      margin-top: 350px;
+      margin-bottom: -40px;
+    }
+    &.cs-about-img-left0{
+      .cs-about-img-area{
+        left: 0;
+        position: absolute;
+      }
+    }
+  }
+}
+
+.cs-about-style-2 {
+  position: relative;
+  .cs-about-wrap-in {
+    position: initial;
+    margin-bottom: -75px;
+    .cs-about-content-wrap .cs-about-content-in .cs-about-para {
+      margin-bottom: 65px;
+    }
+  }
+}
+.flex_end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.cs-about-list-wrap {
+  display: flex;
+  gap: 75px;
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      padding-bottom: 15px;
+      i {
+        margin-right: 10px;
+        color: $accent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .cs-about-wrapper-1{
+    &.cs-about-2 {
+      .cs-about-img-area {
+        left: 10px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1366px) {
+  .cs-about-wrapper-1{
+    &.cs-about-2 {
+      .cs-about-img-area {
+        max-width: 50%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cs-about-wrapper-1{
+    &.cs-about-2 {
+      .cs-about-img-area {
+        max-width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .cs-about-wrapper-1 {
+    .cs-about-content-wrap {
+      max-width: 960px;
+      margin: auto;
+      justify-content: flex-start !important;
+    }
+    .cs-about-img-area {
+      padding-bottom: 50px;
+      max-width: 960px;
+      margin: auto;
+    }
+    &.cs-about-2 {
+      .cs-about-list-wrap {
+        .cs-about-img-area {
+          width: 80% !important;
+        }
+        margin-top: 375px;
+        margin-bottom: 5px;
+      }
+    }
+    &.cs-about-img-left0{
+      .cs-about-list-wrap {
+        .cs-about-img-area {
+          width: 80% !important;
+        }
+        margin-top: 420px;
+      } 
+    }
+  }
+  .cs-about-style-2 {
+    .cs-about-wrap-in {
+      margin-bottom: 0px;
+      .cs-about-content-wrap .cs-about-content-in .cs-about-para {
+        margin-bottom: 45px;
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .cs-about-wrapper-1 {
+    .cs-about-content-wrap {
+      .cs-about-content-in {
+        margin: auto;
+        max-width: 720px;
+      }
+    }
+    .cs-about-img-area {
+      max-width: 720px;
+      margin: auto;
+    }
+    &.cs-about-2 {
+      .cs-about-img-area {
+        position: initial;
+      }
+      .cs-about-list-wrap {
+        max-width: 637px;
+        margin: auto;
+      }
+      .cs-about-content-wrap .cs-about-content-in .cs-about-para {
+        margin-bottom: 40px;
+        p {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  .cs-about-wrapper-1.cs-about-2.cs-about-img-left0 .cs-about-img-area{
+    position: inherit;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cs-about-wrapper-1 {
+    &.cs-about-2 {
+      .cs-about-img-area {
+        position: initial;
+      }
+      .container {
+        max-width: 650px;
+        margin: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .cs-about-wrapper-1 {
+    &.cs-about-2 {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .cs-about-wrapper-1 {
+    .container-fluid {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+    .cs-about-list-wrap {
+      margin-bottom: 30px;
+      flex-direction: column;
+      gap: 0px !important;
+      ul {
+        margin: 0px;
+      }
+    }
+  }
+  .cs-about-wrapper-1.cs-about-2 .container{
+    padding: 0px;
+    margin: 0px;
+  }
+}

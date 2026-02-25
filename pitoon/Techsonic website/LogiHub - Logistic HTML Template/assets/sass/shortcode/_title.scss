@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+  15. Title Style
+----------------------------------------------------------------*/
+.cs-section-title-left-right.sec-title-style-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .cs-title-left-area {
+    .cs-sec-caption {
+      display: flex;
+      align-items: center;
+      .cs-cap-icon {
+        margin-right: 10px;
+        svg {
+          max-height: 16px;
+        }
+      }
+      .cs-cap-text {
+        color: $black;
+        p {
+          margin: 0px;
+          font-family: "Radio Canada Big";
+        }
+      }
+    }
+    .cs-sec-title {
+      h2 {
+        max-width: 800px;
+      }
+    }
+  }
+}
+
+.cs-section-title-center.sec-title-style-2 {
+  .cs-title-center-area {
+    text-align: center;
+    .cs-sec-caption {
+      display: flex;
+      justify-content: center;
+      .cs-cap-icon {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .cs-section-title-left-right.sec-title-style-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .cs-sec-title {
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -1,0 +1,243 @@
+/*--------------------------------------------------------------
+  16. Expertise Area
+----------------------------------------------------------------*/
+.cs-expertise-wrap {
+  .container-fluid {
+    padding: 0px 100px;
+    max-width: 1720px;
+    margin: auto;
+  }
+  .cs-expert-area-content {
+    display: flex;
+    justify-content: space-between;
+    background: $gray-sc;
+    padding: 79px;
+    clip-path: polygon(
+      4% 0,
+      96% 0,
+      100% 20%,
+      100% 80%,
+      96% 100%,
+      4% 100%,
+      0% 80%,
+      0% 20%
+    );
+  }
+  .cs-expert-area-item {
+    max-width: 425px;
+    .cs-exp-icon-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .cs-exp-icon {
+        margin-right: 30px;
+        color: $accent;
+        font-size: 80px;
+      }
+      .cs-exp-title {
+        max-width: 275px;
+      }
+    }
+    &:hover {
+      .cs-exp-icon {
+        .svg-left-to-right-animation {
+          > :first-child {
+            transform: translateX(50%);
+          }
+          > :last-child {
+            transform: translateX(170%) rotateX(50deg);
+          }
+        }
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .cs-expert-line {
+    width: 1px;
+    background: $border;
+    height: 100%;
+    max-height: 150px;
+  }
+  &.expert-area-no-bg {
+    .cs-expert-area-content {
+      background: none;
+      padding: 0px;
+      clip-path: initial;
+      p {
+        margin: 0px;
+      }
+    }
+    &.cs-border-style-expart-area{
+      border-bottom: 1px solid $border;
+      .cs-expert-area-content{
+        .cs-expert-area-item{
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+        .cs-expert-line{
+          max-height: 100%;
+        }
+      }
+    }
+  }
+  &.expert-full-zig {
+    background: $dark-bg;
+    .container-fluid {
+      padding: 0px 10px;
+    }
+    .cs-expert-line {
+      opacity: 0.2;
+    }
+    .cs-expert-area-content {
+      padding: 79px 0px;
+      background: none;
+      color: $white;
+      h5 {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1670px) {
+  .cs-expertise-wrap {
+    .cs-expert-line {
+      display: none;
+    }
+    &.expert-full-zig {
+      .container-fluid {
+        padding: 0px 50px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .cs-expertise-wrap {
+    .cs-expert-area-content {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .cs-expert-area-item {
+      margin-bottom: 40px;
+      margin-right: 30px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .cs-expertise-wrap.expert-area-no-bg.cs-border-style-expart-area {
+    border-bottom: none;
+    .cs-expert-area-content{
+      flex-wrap: nowrap;
+      .cs-expert-area-item{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1241px) {
+  .cs-expertise-wrap {
+    .container-fluid {
+      padding: 0px 100px;
+      .cs-expert-area-content {
+        padding: 0px;
+        background: none;
+        clip-path: none;
+      }
+    }
+    &.expert-full-zig {
+      .container-fluid {
+        padding: 50px 50px;
+      }
+    }
+  }
+  .cs-expertise-wrap.expert-area-no-bg.cs-border-style-expart-area {
+    .cs-expert-area-content{
+      flex-wrap: wrap;
+    }
+  }
+}
+@media screen and (max-width: 1083px) {
+  .cs-expertise-wrap {
+    .container-fluid {
+      padding: 0px 40px;
+      .cs-expert-area-content {
+        padding: 0px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cs-expertise-wrap {
+    .container-fluid {
+      max-width: 720px;
+      margin: auto;
+    }
+    .cs-expert-area-content {
+      padding: 0px;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .cs-expertise-wrap {
+    .cs-expert-area-content {
+      padding: 0px 10px !important;
+      clip-path: circle(70.7% at 50% 50%);
+      .cs-expert-area-item {
+        margin-right: 0px;
+      }
+    }
+    .container-fluid {
+      padding-right: calc(var(--bs-gutter-x) * 0.5);
+      padding-left: calc(var(--bs-gutter-x) * 0.5);
+      margin-top: var(--bs-gutter-y);
+    }
+    &.expert-full-zig {
+      .container-fluid {
+        padding: 50px 10px;
+      }
+    }
+  }
+}
+.svg-left-to-right-animation-wrap {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 85px;
+  .svg-left-to-right-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    overflow: hidden;
+    > :first-child {
+      transition: all 0.5s;
+      transform: translateX(-150%);
+    }
+    > :last-child {
+      transition: all 0.5s;
+      transform: translateX(-50%);
+    }
+  }
+
+  &:hover {
+    .svg-left-to-right-animation {
+      > :first-child {
+        transform: translateX(50%);
+      }
+      > :last-child {
+        transform: translateX(170%) rotateX(50deg);
+      }
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}

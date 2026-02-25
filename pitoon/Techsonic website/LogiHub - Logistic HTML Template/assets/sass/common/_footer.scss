@@ -1,0 +1,224 @@
+/*--------------------------------------------------------------
+  06. Footer
+----------------------------------------------------------------*/
+footer {
+  h6 {
+    color: $white;
+  }
+
+  .cs-logi-footer-container {
+    background: $dark-bg;
+    color: $white;
+    padding-top: 120px;
+    position: relative;
+
+    a:hover{
+      color: rgba($white, 0.9);
+    }
+
+    .cs-logi-footer-content {
+      margin-bottom: 82px;
+      z-index: 2;
+
+      .cs-footer-widget{
+        margin-bottom: 80px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .cs-logi-footer-content {
+        margin-bottom: 0px;
+        .cs-footer-widget{
+          margin-bottom: 60px;
+        }
+      }
+    }
+
+    .cs-logi-copy-area {
+      padding-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+
+      .cs-footer-copy-branding {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+
+      .cs-footer-copy-text {
+        text-align: right;
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+
+  .cs-logi-footer-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+.cs-logi-newsletter {
+  display: flex;
+  position: relative;
+  padding-top: 15px;
+  .cs-newsletter-email {
+    padding-bottom: 17px;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+    font-family: var(--body-font-family);
+    border-bottom: 1px solid rgba($white, 0.2);
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      font-family: "Hedvig Letters Sans";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  .cs-newsletter-btn {
+    position: absolute;
+    right: 0;
+    gap: 5px;
+    i{
+      font-size: 18px;
+      line-height: 0px;
+    }
+    &:hover{
+      opacity: 0.7;
+      transition: all 0.4s ease;
+    }
+  }
+  button[type="submit"] {
+    border: none;
+    background: none;
+    font-size: 16px;
+    padding: 0;
+    width: 100px;
+  }
+}
+
+.cs-footer-widget-title {
+  margin-bottom: 10px;
+}
+.cs-logi-footer-useful-link {
+  ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    li {
+      list-style: none;
+      color: $border;
+      padding-bottom: 15px;
+      font-size: 16px;
+      a {
+        span{
+          color: rgba($white, 0.9);
+        }
+      }
+    }
+    :hover {
+      color: $white;
+    }
+  }
+}
+
+.cs-social-common{
+  padding-top: 30px;
+  ul{
+    display: flex;
+    margin: 0px;
+    padding: 0;
+    li{
+      list-style: none;
+      margin-right: 20px;
+      border: 1px solid $white;
+      border-radius: 100%;
+      min-width: 45px;
+      min-height: 45px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      :last-child{
+        margin-right: 0px;
+      }
+      a{
+        position: absolute;
+        margin-top: 5px;
+        i{
+          font-size: 18px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    li:hover{
+      background: $white;
+      transition: all 0.3s ease-in-out;
+      i{
+        color: $black;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+.cs-newsletter-email {
+  color: $white;
+  &:focus {
+    border-bottom: 1px solid $white;
+  }
+  &::placeholder {
+    color: $white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cs-logi-copy-area{
+    flex-direction: column;
+    text-align: center;
+  }
+  .cs-logi-footer-border{
+    svg{
+      display: none;
+    }
+  }
+  .cs-footer-copy-text {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.cs-logi-cor-office {
+  p {
+    margin-bottom: 25px;
+    color: $border;
+  }
+  .cs-logi-emai-phone {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  &.cs-default-office{
+    p {
+      margin-bottom: 25px;
+      color: var(--body-color);
+    }
+  }
+}

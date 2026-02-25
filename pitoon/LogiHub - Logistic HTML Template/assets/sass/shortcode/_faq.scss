@@ -1,0 +1,168 @@
+/*--------------------------------------------------------------
+  32. FAQ
+----------------------------------------------------------------*/
+.cs_accordian {
+  .cs_accordian_item {
+    margin-bottom: 30px;
+    .cs_accordian_header {
+      padding: 20px 30px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      i {
+        transition: transform 0.5s;
+      }
+      &.cs_icon > i {
+        transform: rotate(-180deg);
+      }
+    }
+    .cs_accordian_body {
+      padding: 30px;
+      font-size: 16px;
+    }
+    &.cs_color_1 {
+      border: none;
+      .cs_accordian_header {
+        background-color: $gray_sc;
+        transition: all 0.4s ease;
+        .cs_accordian_title {
+          color: $black;
+          font-family: "Radio Canada Big";
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 125%;
+          transition: all 0.4s ease;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .cs_accordian_body {
+        background: rgba($color: $border, $alpha: 0.7);
+        font-size: 16px;
+      }
+    }
+  }
+  &.light-border-accordian{
+    .cs_accordian_item {
+      &.cs_color_1 {
+        .cs_accordian_header {
+          padding: 20px 0px;
+          background-color: $white;
+          border-bottom: 1px solid $border;
+          .cs_accordian_title {
+            background: $white;
+          }
+        }
+        .cs_accordian_body {
+          background: $white;
+          padding: 30px 30px 0px 0px;
+        }
+      }
+    }
+    .cs_accordian_header.active {
+      background-color: $white !important;
+      border-bottom: 1px solid $accent !important;
+      color: $black !important;
+      i {
+        margin-top: 0px;
+      }
+      .cs_accordian_title {
+        color: $black !important;
+      }
+    }
+  }
+}
+
+
+.cs_accordian_header.active {
+  background-color: $dark-bg !important;
+  color: $white !important;
+  transition: all 0.4s ease;
+  i {
+    margin-top: -10px;
+  }
+  .cs_accordian_title {
+    color: $white !important;
+    transition: all 0.4s ease;
+  }
+}
+
+
+// Faq Page Style
+@media screen and (max-width: 991px) {
+  .cs-faq-page-wrap .cs-faq-container-in{
+    .container{
+      max-width: 720px;
+      margin: auto;
+      .row{
+        .col-lg-9{
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .cs-faq-wrap{
+      margin-left: 0px !important;
+      margin-top: 50px;
+    }
+  }
+}
+
+.cs-faq-page-wrap{
+  .cs-faq-container-in{
+    .cs-faq-wrap{
+      margin-left: 30px;
+    }
+  }
+}
+
+.cs-left-navigation-wrap {
+  background: $dark-bg;
+  padding: 40px 30px;
+  .cs-left-nav-in {
+    ul {
+      border-left: 2.5px solid rgba($color: $white, $alpha: 0.3);
+      display: inline-grid;
+      li {
+        line-height: 175%;
+        a {
+          span {
+            color: $white;
+            font-family: "Radio Canada Big";
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  &.light-left-nav{
+    background: none;
+    padding: 0;
+    margin-top: 30px;
+    ul{
+      border-left: 2.5px solid rgba($color: $dark-bg, $alpha: 0.3);
+      li{
+        a{
+          span{
+            color: var(--body-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.tab {
+  display: inline-block;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+

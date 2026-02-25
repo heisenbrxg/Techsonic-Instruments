@@ -1,0 +1,364 @@
+/*--------------------------------------------------------------
+  25. Project Case study
+----------------------------------------------------------------*/
+.cs-project-slider-wrapper {
+  position: relative;
+  .cs-project-slider-content {
+    .cs-project-slider-content-in {
+      padding: 150px 0px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      .cs-project-slider-inner-content {
+        padding-bottom: 100px;
+        .cs-pl-title {
+          padding-bottom: 30px;
+          h2 {
+            color: $white;
+            font-size: 70px;
+          }
+        }
+        .cs-pl-btn {
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .swiper-scrollbar {
+    background: rgba($color: #fff, $alpha: 0.2);
+    height: 5px;
+    width: 315px;
+    position: initial;
+    .swiper-scrollbar-drag {
+      height: 5px;
+      background: $white;
+    }
+  }
+  .ps-scrollbar-navigation {
+    position: absolute;
+    bottom: 30px;
+    padding-left: calc((100% - 1320px) / 2);
+    .ps-scrollbar-navigation-in {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .cs-arrow-left,
+    .cs-arrow-right {
+      background: rgba($color: #fff, $alpha: 0.2);
+      &:hover {
+        background: $white;
+        transition: all 0.4s ease-in-out;
+        i {
+          color: $black;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+    i {
+      color: $white;
+    }
+  }
+  .cs-ps-slider-thumb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    width: 28.125rem;
+    height: 22.8125rem;
+    flex-shrink: 0;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+    background-color: $dark-bg;
+    .cs-thumb-in {
+      display: flex;
+      padding-bottom: 25px;
+    }
+    .cs-ps-thumb-item {
+      cursor: pointer;
+
+      img {
+        border-radius: 100%;
+        text-align: right;
+        opacity: 0.35;
+        transition: all 0.5s ease;
+        width: 80%;
+        &:hover {
+          opacity: 1;
+          transition: all 0.5s ease;
+          width: 100%;
+        }
+      }
+    }
+    .cs-ps-in {
+      display: flex;
+      align-items: center;
+      align-content: flex-end;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 250px;
+      max-height: 220px;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cs-project-slider-wrapper {
+    .ps-scrollbar-navigation {
+      padding-left: calc((100% - 720px) / 2);
+    }
+    .cs-pl-title {
+      h2 {
+        font-size: 50px !important;
+      }
+    }
+    .cs-ps-slider-thumb {
+      display: none;
+    }
+    .cs-project-slider-inner-content {
+      padding-bottom: 50px !important;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .cs-project-slider-wrapper {
+    .ps-scrollbar-navigation {
+      max-width: 540px;
+      margin: auto;
+    }
+    .cs-logi-arrow-wrap {
+      display: none;
+    }
+    .swiper-scrollbar {
+      margin-left: 10px;
+    }
+    .cs-project-slider-content-in {
+      padding: 75px 0px !important;
+    }
+  }
+}
+
+// Case Study Page Style
+.cs-case-list-wrap {
+  .cs-case-list-on {
+    .cs-case-item {
+      position: relative;
+      max-width: 420px;
+      max-height: 460px;
+      margin: auto;
+      overflow: hidden;
+
+      .cs-case-img {
+        overflow: hidden;
+        transition: transform 0.4s ease;
+
+        img {
+          width: 100%;
+          height: auto;
+          transition: transform 0.4s ease;
+        }
+      }
+
+      .cs-case-item-details {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        top: 20px;
+
+        .cs-case-item-content {
+          background: rgba($dark-bg, 0.7);
+          padding: 30px;
+          height: 100%;
+          width: 100%;
+          color: $white;
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          opacity: 0;
+          transition: opacity 0.4s ease;
+        }
+      }
+
+      &:hover {
+        .cs-case-item-content {
+          opacity: 1;
+        }
+        .cs-case-img {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.cs-raw-in-col9 > *:nth-child(-n + 6) {
+  padding-bottom: 30px;
+}
+
+.cs-raw-in-col9 > *:nth-last-child(-n-3) {
+  padding-bottom: 0;
+}
+@media screen and (max-width: 991px) {
+  .cs-raw-in-col9 > *:nth-child(-n + 7) {
+    padding-bottom: 30px;
+  }
+
+  .cs-raw-in-col9 > *:nth-last-child(-n-2) {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cs-raw-in-col9 > *:nth-child(-n + 8) {
+    padding-bottom: 30px;
+  }
+
+  .cs-raw-in-col9 > *:nth-last-child(-n-1) {
+    padding-bottom: 0;
+  }
+}
+
+// Case Single Page Style
+.cs-single-page-couple-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.cs-project-info {
+  background: $border;
+  padding: 60px 40px;
+  .cs-widget-title {
+    h5 {
+      margin-bottom: 15px;
+    }
+  }
+  .cs-p-info-text {
+    h6 {
+      font-size: 18px;
+    }
+  }
+  .cs-project-info-in {
+    .cs-info-item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.cs-quote-card-wrap {
+  background: $border;
+  border-left: 2px solid $accent;
+  .cs-quote-in {
+    position: relative;
+    i {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-size: 90px;
+      opacity: 0.05;
+      color: $dark-bg;
+    }
+    .cs-quote-text {
+      padding: 50px;
+      p {
+        color: var(--Black, #0a0a0a);
+        font-family: "Radio Canada Big";
+        font-size: 1.375rem;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+  }
+  &.cs-quote-dark{
+    background: $dark-bg;
+    i{
+      color: $white;
+    }
+    .cs-quote-text{
+      p{
+        color: $white;
+      }
+    }
+  }
+}
+
+.cs-phone-cta.case {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .cs-phone-content {
+    position: absolute;
+    bottom: 30px;
+    .cs-phone-in {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      h6 {
+        color: $white;
+        margin-top: -5px;
+      }
+      i {
+        font-size: 30px;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .cs-phone-cta.case {
+    display: none;
+  }
+  .single-content-left {
+    .cs-single-widget-wrap {
+      margin-right: 0px;
+    }
+  }
+  .cs-single-page-couple-img {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .single-content-left {
+    .cs-single-widget-wrap {
+      margin: 0px !important;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .cs-page-single-wrap.single-content-left {
+    margin-left: 0px !important;
+  }
+}
+
+.cs-couple-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-rotate-left {
+  i {
+    transform: rotate(-180deg);
+  }
+}

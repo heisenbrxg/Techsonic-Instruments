@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+  10. Slider Style
+----------------------------------------------------------------*/
+.home1-blog-slider {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 630px) {
+  .home1-blog-slider .swiper-slide {
+    width: 630px;
+  }
+}
+@media screen and (max-width: 405px) {
+  .home1-team-slider .swiper-slide {
+    width: 100%;
+  }
+}
+
+.cs-team-wrapper{
+  .home1-team-slider {
+    overflow: hidden;
+  }
+  .home1-team-slider {
+    .swiper-slide {
+      width: 405px;
+    }
+  }
+}

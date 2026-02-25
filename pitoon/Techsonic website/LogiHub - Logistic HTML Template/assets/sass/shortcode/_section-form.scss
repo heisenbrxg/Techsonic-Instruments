@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+  21. Section Forms
+----------------------------------------------------------------*/
+.cs-form-with-map{
+    .container-fluid{
+        padding-right: calc((100% - 1320px) / 2);
+    }
+    .cs-map-half{
+        iframe{
+            height: 600px;
+            width: 100%;
+            margin-bottom: -10px;
+            :focus,
+            :active{
+                border: none;
+            }
+        }
+    }
+    @media screen and (min-width: 1600px) {
+        .cs-form-for-map{
+            margin-left: 150px;
+        }  
+    }
+}
+@media screen and (max-width: 1350px) {
+    .cs-form-with-map{
+        .cs-form-for-map{
+            margin-left: 20px;
+        }
+        .cs-form-light{
+            padding-right: 10px;
+        }   
+    }
+}
+@media screen and (max-width: 991px) {
+    .cs-form-with-map{
+        .cs-map-half{
+            margin-bottom: 50px;
+        }
+        .cs-form-light{
+            padding-right: 0px;
+            margin-bottom: 110px;
+        } 
+        .cs-form-for-map{
+            .cs-form-with-map.cs-form-light{
+                margin-bottom: 0px !important;
+            }
+        } 
+    }
+}

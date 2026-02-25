@@ -1,0 +1,63 @@
+/*--------------------------------------------------------------
+  28. Pricing
+----------------------------------------------------------------*/
+.cs-pricing-wrap {
+  background: $gray_sc;
+  .cs-pricing-item-wrap {
+    background: $white;
+    padding: 65px 65px;
+    display: flex;
+    justify-content: center;
+    .cs-pricing-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      .cs-pricing-top,
+      .cs-price-text {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .cs-price-text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        span {
+          margin-bottom: 6px;
+        }
+      }
+      .cs-pricing-feature-list {
+        margin-bottom: 40px;
+        ul {
+          li {
+            padding: 7px 0px;
+            list-style: disc;
+            line-height: 135%;
+          }
+        }
+      }
+      .cs-primary-btn {
+        margin: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cs-pricing-wrap {
+    .row {
+      .col-lg-6 {
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1199px) {
+  .cs-pricing-wrap {
+    .cs-pricing-item-wrap{
+      padding: 40px 25px;
+    }
+  }
+}

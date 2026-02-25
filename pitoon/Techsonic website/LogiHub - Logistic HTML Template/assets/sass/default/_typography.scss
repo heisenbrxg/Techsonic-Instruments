@@ -1,0 +1,316 @@
+/*--------------------------------------------------------------
+  02. Typography
+----------------------------------------------------------------*/
+
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --body-font-family: "Hedvig Letters Sans", sans-serif;
+  --heading-font-family: "Radio Canada Big", sans-serif;
+}
+
+html,
+body {
+  color: var(--body-color);
+  background-color: var(--drcs-color);
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6em;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  color: var(--heading-color);
+}
+
+.cs_primary_font {
+  font-family: var(--heading-font-family);
+}
+
+.cs_secondary_font {
+  font-family: var(--body-font-family);
+}
+
+/* Heading 1 */
+h1,
+.cs-text-style-h1 {
+  font-family: "Radio Canada Big";
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+@media (max-width: 991px) {
+  h1,
+  .cs-text-style-h1 {
+    font-size: 80px;
+  }
+}
+
+/* Heading 2 */
+h2,
+.cs-text-style-h2 {
+  font-family: "Radio Canada Big";
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+@media (max-width: 991px) {
+  h2,
+  .cs-text-style-h2 {
+    font-size: 45px;
+  }
+}
+
+/* Heading 3 */
+h3,
+.cs-text-style-h3 {
+  font-family: "Radio Canada Big";
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+@media (max-width: 991px) {
+  h3,
+  .cs-text-style-h3 {
+    font-size: 32px;
+  }
+}
+
+/* Heading 4 */
+h4,
+.cs-text-style-h4 {
+  font-family: "Radio Canada Big";
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 2.84375rem */
+}
+@media (max-width: 991px) {
+  h4,
+  .cs-text-style-h4 {
+    font-size: 28px;
+  }
+}
+
+/* Heading 5 */
+h5,
+.cs-text-style-h5 {
+  font-family: "Radio Canada Big";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+@media (max-width: 991px) {
+  h5,
+  .cs-text-style-h5 {
+    font-size: 25px;
+  }
+}
+
+/* Heading 6 */
+h6,
+.cs-text-style-h6 {
+  font-family: "Radio Canada Big";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%; /* 1.85625rem */
+}
+
+p {
+  font-family: "Hedvig Letters Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%; /* 1.85625rem */
+}
+
+ul {
+  margin: 0 0 25px 0;
+  padding-left: 20px;
+  list-style: square outside none;
+  &.cs_list_style_none {
+    list-style: none;
+    padding: 0px;
+    li {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+ol {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 15px;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.6em;
+  margin: 0;
+}
+
+address {
+  margin: 0 0 15px;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+button {
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $accent;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 25px;
+  th {
+    font-weight: 600;
+    color: var(--body-color);
+  }
+  td,
+  th {
+    border-top: 1px solid $border;
+    padding: 11px 10px;
+  }
+}
+
+dl {
+  margin-bottom: 25px;
+  dt {
+    font-weight: 600;
+  }
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+pre {
+  color: var(--body-color);
+  border: 1px solid $border;
+  font-size: 18px;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+kbd {
+  font-size: 100%;
+  background-color: var(--body-color);
+  border-radius: 5px;
+}
+
+.cs-small-text {
+  font-family: "Hedvig Letters Sans";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 991px) {
+  body,
+  html {
+    font-size: 16px;
+    line-height: 1.6em;
+  }
+  ul {
+    margin: 0 0 25px 0;
+    padding-left: 20px;
+    list-style: square outside none;
+    &.cs_list_style_none {
+      list-style: none;
+      padding: 0px;
+      li {
+        margin-bottom: 10px;
+        h3 {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+input,
+textarea {
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+
+// Font Weight
+
+.cs_light {
+  font-weight: 300;
+}
+
+.cs_normal {
+  font-weight: 400;
+}
+
+.cs_medium {
+  font-weight: 500;
+}
+
+.cs_semi_bold {
+  font-weight: 600;
+}
+
+.cs_bold {
+  font-weight: 700;
+}
+
+.cs_extra_bold {
+  font-weight: 800;
+}
+
+.cs_black {
+  font-weight: 900;
+}

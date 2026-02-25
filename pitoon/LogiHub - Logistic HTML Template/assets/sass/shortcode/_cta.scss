@@ -1,0 +1,125 @@
+/*--------------------------------------------------------------
+  23. CTA
+----------------------------------------------------------------*/
+.cs-cta-fullw-horizontal{
+    height: 400px;
+    transition: background-position 0.9s ease-out;
+    background-color: $dark-bg;
+    background-size: cover;
+    .cs-cta-hor-in{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cs-cta-hor-title{
+            max-width: 75%;
+            h2{
+                font-size: 70px;
+            }
+        }
+    }
+    &.cs-cta-center{
+      background-attachment: fixed;
+      text-align: center;
+      height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .cs-cta-center-in{
+        max-width: 970px;
+        margin: auto;
+        .cs-cta-center-title{
+          margin-bottom: 60px;
+          h2{
+            font-size: 70px;
+          }
+        }
+      }
+    }
+    &.cta-no-bg{
+      background: none;
+      height: auto;
+      h2{
+        color: $black;
+      }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .cs-cta-fullw-horizontal {
+      height: 350px;
+    }
+    .cs-cta-hor-title {
+      max-width: 80%;
+    }
+    .cs-cta-hor-title h2 {
+      font-size: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .cs-cta-fullw-horizontal {
+      height: 325px;
+      &.cs-cta-center{
+        .cs-cta-center-in{
+          max-width: 100%;
+        }
+      }
+    }
+    .cs-cta-hor-in {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .cs-cta-hor-title {
+      max-width: 100%;
+      text-align: center;
+    }
+    .cs-cta-hor-title h2 {
+      font-size: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .cs-cta-fullw-horizontal{
+      &.cs-cta-center{
+        .cs-cta-center-in{
+          .cs-cta-center-title{
+            h2{
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+    .cs-cta-hor-in {
+      gap: 20px;
+      svg{
+        display: none;
+      }
+    }
+    .cs-cta-hor-title {
+      width: 100vw;
+    }
+    .cs-cta-hor-title h2 {
+      font-size: 40px !important;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .cs-cta-hor-title h2 {
+      font-size: 30px !important;
+    }
+    .cs-cta-fullw-horizontal{
+      &.cs-cta-center{
+        height: 450px;
+        .cs-cta-center-in{
+          .cs-cta-center-title{
+            margin-bottom: 20px;
+            h2{
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+  

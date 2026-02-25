@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+  03. Preloader
+----------------------------------------------------------------*/
+.cs-logi-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+#logi-preloader{
+  .cs-logi-preloader{
+    .reveal-img-wrap{
+      .preloader-img-inner{
+        img{
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+.cs_scrollup {
+  position: fixed;
+  bottom: -60px;
+  right: 0px;
+  color: $black;
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  z-index: 10;
+  background-color: $white;
+  &:hover {
+    background-color: $accent;
+    color: $white;
+  }
+  i {
+    font-size: 20px;
+    line-height: 0px;
+  }
+}
+
+.cs_scrollup.cs_scrollup_show {
+  bottom: 0px;
+}
+
+.logi-splite-2{
+  display: inline-block;
+  overflow: hidden;
+}
+.logi-splite-2 div {
+  display: inline-block;
+  opacity: 0;
+}
