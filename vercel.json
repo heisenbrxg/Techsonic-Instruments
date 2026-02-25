@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/pitoon/LogiHub - Logistic HTML Template/$1"
+        }
+    ]
+}
