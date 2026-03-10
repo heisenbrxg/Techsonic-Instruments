@@ -1,0 +1,559 @@
+ELECTRONICS & INSTRUMENTATION ENGINEERING (E&I)
+ELECTRICAL CONTROL & INSTRUMENTATION LAB
+PID Controller
+AC/DC Motor speed control (transfer function study) trainer
+Design of lead - lag compensation
+AC/DC Motor position control system
+Modelling of systems machines, sensors and transducers
+Stability analysis of liner system (stable/unstable)
+Synchro transmitter and receiver
+AC/DC Bridges (wheatstone, kelvin, Anderson, schering, etc.)
+Pressure measurement trainer
+Temperature measurement using RTD, thermistor
+Displacement measurement trainer using LVDT
+Optical measurement trainer using LDR, photodiode
+Strain measurement trainer
+Flow measurement trainer
+Power and energy measurement trainer
+Instrumentation amplifier trainer
+A/D and D/A converter module
+Stepper motor position control trainer
+Stepper motor and drive study trainer
+Servo motor study trainer
+AC/DC Motor and drive study trainer
+
+INSTRUMENTATION TRANSDUCERS AND MEASUREMENTS LAB
+Displacement measurement using resistive sensor (LVRT)
+Strain measurement trainer
+Load measurement trainer
+Displacement measurement using LVDT
+Hall effect transducer trainer
+Speed measurement trainer using photoelectric/proximity sensor
+LDR characteristics trainer
+Thermistor characteristics trainer
+Thermocouple characteristics trainer [J,K,E Types]
+Step response of RTD and thermocouple
+Temperature measurement using RTD sensor (three & four leads)
+Fiber optic transducer for temperature measurement
+Bridges (wheatstone, schering, Maxwell, hay's, De-sauty, etc.)
+Calibration of single-phase energy meter and wattmeter
+Calibration of series and shunt type ohmmeters
+Calibration of ammeter and voltmeter using potentiometer
+Angular displacement using resistive and capacitive transducer
+Calibrator (RTD & thermocouple / temperature/ pressure)
+Light intensity measurement trainer [LDR/ photo diode & transistor]
+Muffle furnace
+Smoke sensor trainer
+Bourdon tube study trainer
+Humidity and temperature measurement trainer
+Piezo electronic transducer trainer
+Bellows measurement trainer
+Instrumentation amplifier trainer
+Transducer trainer (strain, load, torque, pressure, etc.)
+Transducer trainer (sound, temperature, level, halleffect, optical, etc.)
+Strain (rosette) measurement trainer
+
+INDUSTRIAL INSTRUMENTATION LAB
+DC Motor speed measurement trainer
+Vibration measurement trainer
+Torque measurement trainer
+Calibration of ammeter, voltmeter, wattmeter using multifunction calibrator
+Calibration of pressure gauge using dead weight tester
+Discharge coefficient of orifice plate
+Calibration of rotameter
+Electromagnetic flow meter study trainer
+Temperature measurement using IR thermometer and IC sensor
+Redwood/ saybolt viscometer
+Vacuum pressure measurement trainer
+Level measurement using DP transmitter/capacitance LT
+Moisture and humidity transducer trainer
+UV/IR spectro photometer
+pH/ conductivity measurement trainer
+(Note: Items 16 and 17 moved to MEDICAL ELECTRONICS)
+
+PROCESS CONTROL LAB
+Flow process controller
+Level process controller
+Temperature process controller
+Pressure process controller
+Interacting and Non-interacting system
+Temperature ON/OFF controller
+Control valve positioner trainer
+Cascade control trainer (flow and level/ flow and temperature)
+Control valve characteristics trainer (Equal%, liner%, ON/OFF)
+Multiprocess control trainer (cascade, ratio feedback and feed forward)
+AC and DC Drives study trainer
+Auto tuning of PID controller
+Analog/ digital PID controller
+Smart transducer
+
+PLC & APPLICATION LAB
+SCADA software
+Programmable logic controller trainer (AB/ABB/Siemens/Omron etc.)
+Distributed control system (DCS)
+PLC Based bottle filling trainer
+PLC Based stamping machine trainer
+PLC Based Traffic light controller
+PLC Based AC/DC Motor speed control system
+PLC Based Drilling machine trainer
+PLC Based water level (filling / draining) controller
+PLC Based Batch processing system
+PLC Based Temperature controller
+PLC Based pressure control system
+PLC Based Conveyor control system
+PLC Based lift control system
+PLC Based Electro pneumatic trainer
+PLC Based Car parking system
+PLC Based water flow monitoring and control system
+PLC Based Direct-on-Line starter / Star-delta starter kit
+PLC Based Stair case light controller
+PLC Based control Circuit for Forward Reverse Operation
+
+INSTRUMENTATION SYSTEM DESIGN LAB
+Design of current voltage & voltage current converter trainer
+Design of signal conditioning for bonded strain gauge
+Design of instrumentation amplifier / RTD signal conditioning trainer
+Design of regulated power supply
+Linearization of thermocouple
+Design of orifice plate and rotometer
+Control valve study trainer (cut section)
+Loop analyzer
+
+ADVANCED RESEARCH PROCESS CONTROL LAB
+Conical (single / two / three) tank system
+spherical (single / two / three) tank system
+Conical and spherical tank system
+Four tank system / three tank system
+Multiple input and multiple output system
+Multi process control system (flow, level, pressure, temperature)
+Multi tank system
+pH control trainer
+Continuous stirrer tank reactor system (CSTR)
+Distributed control system (AB, ABB, Siemens)
+Temperature process trainer (heat exchanger)
+
+ADDITIONAL PRODUCTS (Instrumentation)
+Design of seebeck effect study trainer
+Wireless(zigbee) based transducer trainer (temperature, strain, LVDT, pressure, etc.)
+Dry block temperature calibrator
+1st and 2nd order system using temperature controller U-tube manometer
+Temperature process controller using heat exchanger
+Flow measurement using turbine / orifice/venturi/pitot tube/ ultrasonic
+Level measurement using ultra sonic/ load cell / float/DP transmitter
+Motorized control valve study trainer
+PC[MATLAB/LABVIEW] Based transducer kit (strain, LVDT, Load, Torque, etc.)
+P/I & I/P Study trainer
+Flapper Nozzle System
+XY Recorder
+Strip chart recorder
+
+SOFTWARE
+SCADA
+
+TESTING AND MEASURING INSTRUMENTS
+Variable power supply [single/dual] [(0-30V) 1A-5A]
+High voltage power supply (0-300V/2A)
+Fixed power supply (+ or - 5V, + or - 12V, + or - 15V)
+Cathode ray oscilloscope (CRO) 20MHz to 200MHz
+Function generator (FG) 1MHz to 10MHz
+Digital storage oscilloscope (DSO) 20MHz to 200MHz
+Digital frequency meter / LCR Meter
+Decade inductance, capacitance, resistance box (4,5,6,7 dial)
+Analog desktop ammeter / voltmeter / wattmeter (various ranges)
+Analog portable ammeter / voltmeter / wattmeter (various ranges)
+Digital ammeter / voltmeter / wattmeter (various ranges)
+Digital / analog multimeter & stop watch
+Clamp meter / range finder
+Analog / digital watt meter (energy meter)
+Digital sound level meter / LUX meter/vibration meter
+Analog / digital tachometer (contact or non contact type)
+Auto transformer (single phase, three phase)
+Resistance / inductive / capacitive load bank (various range)
+Lamp load bank (various ranges)
+Digital stroboscope / Mcleod gauge
+
+Additional E&I Products (from first MORE PRODUCTS)
+MATLAB Based AC/DC motor speed control trainer
+MATLAB Based AC/DC motor position control trainer
+Light intensity control trainer
+PLC Based Automatic Rotor Resistance Starter trainer
+
+ELECTRICAL & ELECTRONICS ENGINEERING (EEE)
+POWER ELECTRONICS AND DRIVES LAB
+SCR gate pulse generation trainer
+Characteristics of SCR, TRIAC, MOSFET, GTO, IGCT AND IGBT Trainer
+Single phase half and fully controlled converter trainer
+Step down and step up chopper trainer
+IGBT Based single phase inverter trainer
+IGBT Based three phase inverter trainer
+Single phase AC Voltage controller trainer
+Single & Three phase PWM Inverter
+Single phase cyclo converter trainer
+Single phase AC Voltage controller using TRIAC & DIAC
+SCR Firing Circuit using R,RC & UJT
+SMPS trainer
+Characteristics of PMBLDC Motor
+
+ELECTRICAL MACHINE LAB
+Dc shunt motor with load
+DC shunt motor with three phase alternator
+DC series motor with load
+DC compound motor with load
+Single & three phase induction motor with load
+DC shun motor with dc compound generator
+DC Shunt motor with DC shunt generator
+Synchronous induction motor with load
+DC shunt motor squirrel gauge induction motor
+Three phase squirrel gauge induction motor
+
+Additional EEE Products (from first MORE PRODUCTS)
+Speed control of three phase AC induction motor
+Testing of MCB and ELCB Trainer
+Forward & reverse operation trainer
+Single phase preventer trainer
+
+ELECTRONICS & COMMUNICATION ENGINEERING (ECE)
+MICROPROCESSOR AND MICROCONTROLLER LAB
+8085/8086 microprocessor kit
+8081 microcontroller kit
+8255/8251/8259 interface board
+Traffic light interface board
+Stepper motor interface board
+Digital control interface board
+Matrix key board interface board
+Printer status interface board
+Serial interface and parallel interface board
+A/D AND D/A interface board
+DC/AC Motor interface board
+Seven segment interface board
+Digital I/O interface board
+Digital IC trainer analog IC tester
+Digital IC tester / analog IC tester
+
+COMMUNICATION
+Analog communication trainer [AM&FM modulation / demodulation, etc.]
+Digital communication trainer [PAM/PPM/PWM/ASK/FSK etc.]
+
+ADVANCE COMMUNICATION LAB
+Antenna / RADAR trainer
+LAN Trainer kit / OFT trainer kit
+SDR (software defined radio) trainer
+
+VLSI / EMBEDDED LAB
+8051 embedded development
+ARM development board
+VLSI Kit
+Arduino based raspberry Pi kit
+PIC (16F877) Development kit [Zigbee/ wifi communication]
+AVR development kit / MSP - 430 development kit
+MSP - 430 development kit
+
+SOFTWARE
+E-sim / Scilab
+P-Spice / MATLAB
+Cadence / cadence pspsie
+MATLAB / Netsim
+
+ADDITIONAL ECE PRODUCTS
+Spartan-6 FPGA development kit
+IOT development kit
+Wein bridge oscillator
+Image processing development kit
+Tiva C series Board
+
+MECHANICAL ENGINEERING
+FLUID MECHANICS LAB
+Discharge co-efficient of orifice meter
+Discharge co-efficient of venturi meter
+Flow meter apparatus
+Pipe friction apparatus
+Reciprocating pump test rig
+Gear pump / vane pump test rig
+Centrifugal pump
+Submersible pump
+Pelton wheel turbine test rig
+Francis turbine test rig
+Kaplan turbine test rig
+Notch apparatus
+
+KINEMETICS AND DYNAMICS LAB
+Cam analyzer
+Motorized gyroscope
+Whirling of shaft apparatus
+Governor apparatus
+Dynamic balancing machine
+Two rotor system
+Spring mass system
+Torsional vibration of single rotor system setup
+Turn table apparatus
+Transverse vibration setup
+
+THERMAL ENGINEERING
+Four stroke single cylinder diesel engine (cut section)
+Two stroke single cylinder petrol engine (cut section)
+Four stroke single cylinder diesel engine (electrical / hydraulic/mechanical)
+Four stroke single cylinder petrol engine
+Four stroke three cylinder diesel engine (cut section)
+Multi cylinder petrol engine
+Flash point and fire point apparatus (open/closed cup)
+Data acquisition system (for above engines)
+Gas analyzer (4 gas, 5gas)
+PC Based engine trainer (P-V & P-Q)
+
+THERMAL ENGINEERING LAB-II
+Guarded plate apparatus
+Lagged pipe apparatus
+Natural convection apparatus
+Forced convection apparatus
+Composite wall apparatus
+Insulating powder apparatus
+Pin-Fin apparatus
+Stefan-Boltzmann apparatus
+Emissivity measurement apparatus
+Heat exchange apparatus (parallel/counter)
+HR refrigeration test rig
+Reciprocating air compressor study trainer (two/single stage)
+Cooling tower apparatus
+Drop and film wise apparatus
+
+METROLOGY AND MEASUREMENT LAB
+Micrometer / vernier caliper
+Slip gauge / sine bar
+Profile projector / Tool maker's microscope
+Gear tooth vernier caliper/ vernier height gauge
+Floating carriage micrometer
+Coordinate measuring machine
+Comparator (mechanical/electrical/pneumatic)
+Surface finishing measuring equipment
+Bore diameter measurement using telescope gauge/micrometer
+Torque measurement using load cell
+Torque measurement trainer
+Temperature measurement trainer (RTD, Thermocouple)
+LVDT Trainer
+Autocollimator
+Metallurgical microscope
+
+REFRIGERATION LAB
+Refrigeration test rig
+Duct air conduct test rig
+Split AC test rig
+Window AC test rig
+Air cooler test rig
+Water test rig
+Vapour compressor test rig
+
+SOFTWARE
+Ansys
+Automation studio software
+Hydrosim and Pneumosim software
+
+ADDITIONAL MECHANICAL PRODUCTS
+Prony brake dynamometer
+Pneumatic & hydraulic braking system [Two & Four Wheelers]
+MATLAB Based basic electro pneumatic trainer
+
+MECHINICAL ENGINEERIG LAB
+Tension test / compression test
+Deflection test
+Hardness test (Rockwell, brinell, vickers)
+Spring test / torsion test / impact test
+
+FLUID MECHINICS LAB
+Wire & notches apparatus
+Flow through straight and annular pipe apparatus
+Open drum orifice apparatus
+Pipe and fitting apparatus
+Helical and spiral coil apparatus
+Fluidized bed apparatus
+
+MECHATRONIC ENGINEERING
+MECHATRONICS LAB
+8085 Microprocessor kit
+8085 Microcontroller kit
+Stepper motor controller using Microprocessor/ Microcontroller
+Various transducer trainer (temperature, strain, pressure)
+Hydraulic trainer
+Pneumatic trainer
+Electro Pneumatic trainer
+Programmable logic controller trainer
+Image processing system
+
+CIVIL ENGINEERING
+MECHINICAL / FLUID & SOIL OPERATION / GELOGY LAB
+Sieve shaker
+Leaf filter
+Plate and frame press
+Sedimentation jar
+Crusher (Jaw, Ball, Drop Weight)
+Ball / Hammer Mill
+Cyclone separator
+Elutriator
+Test sieves
+Air permeability apparatus
+Petrological microscope
+
+CHEMICAL ENGINEERING (New Department)
+HEAT TRANSFER LAB
+Open pan evaporator
+Boiler
+Packed bed column
+Double pipe heat exchanger apparatus
+Bar and finned tube heat exchanger apparatus
+Condenser apparatus (vertical / horizontal)
+Jacketed vessel apparatus
+Agitated vessel apparatus
+Shell and tube heat exchanger
+
+MASS TRANSFER LAB
+Distillation column [simple / steam]
+Packed distillation column
+Liquid-liquid extractor
+Vacuum dryer
+Tray dryer / rotary dryer
+Ion exchanger column
+Rotating Disc contactor
+Cooling tower apparatus
+Absorption column
+
+CHEMICAL REACTION LAB
+Batch reactor
+Plug flow reactor
+CSTR
+Sono-chemical reactor
+Photo-chemical reactor
+Packed bed reactor
+
+PROCESS CONTROL LAB (Chemical)
+U tube manometer with controller
+Interacting and non-interacting system
+Temperature ON/OFF controller
+Control valve characteristics trainer
+Pressure process controller
+Temperature process controller
+Level / flow process controller
+Cascade control system
+
+SOFTWARE
+ASPEN PLUS / HYSYS
+Ansy / sadpro
+
+LABORATORY GLASSWARE
+Glass product [pipette/burette/beaker/jar/etc.]
+Decanting column
+Soxhlet extractor
+
+PETROLEUM ENGINEERING
+PPT/ CHEMICAL & PETRO CHEMICAL ANALYSIS LAB
+Abel's flash point apparatus
+Pensky marten flash point apparatus
+Viscometer (redwood, saybolt, engler, dynamic)
+Cleveland open cup apparatus
+Cloud and pour apparatus
+Flash & Fire point apparatus
+Aniline point apparatus
+Bomb calorimeter apparatus
+Orsat apparatus
+Carbon residue apparatus
+Uv spectrophotometer
+Gas chromatography
+Abby refractometer
+Reflection setup
+Weighing balance
+Melting point apparatus
+Magnetic / mechanical stirrer
+Heating mantel
+Muffle furnace / hot air oven
+Vacuum pump
+Bunsen burner
+Deep freezer
+Incubator (COD / BOD)
+Shaker
+pH meter / conductivity meter
+
+AGRICULTURAL ENGINEERING (New Department)
+AGRICULTURE ENGINEERING: OPERATION AND MAINTENANCE OF FARM MACHINERY LABORATORY
+Tractor
+Power tiller
+Disc plough
+Disc harrow
+Multi type cultivator
+Paddy Transplanter
+Seed drill
+Spayer
+Mower
+Weeder
+Combine harvester
+
+POST HARVEST ENGINEERING LABORATORY
+Hot air oven
+Grain moisture meter
+Porosity apparatus
+Coefficient of friction apparatus
+Angle of repose
+Round type and Lype
+Paddy thresher
+Groundnut decorticator Sheller
+Maize Sheller
+Thin layer dryer
+LSU dryer
+Bucket elevator
+screw conveyor
+Rubber roll Sheller
+Oil expeller
+
+IRRIGATION FIELD LABORATORY
+Meteorological lab with Cup counter anemometer, Sunshine recorder, Open pan vaporimeter, Stevenson's screen - Dry bulb, wet bulb thermometers, recording and nonrecording type rain gauge
+Double ring infiltrometer
+Digital infiltrometer
+Parshall flume, cut throat flume
+Vnotch, Rectangular notch and trapezoidal notch
+Drip irrigation system with all accessories
+Sprinkler irrigation system with all accessories
+Required number of stop watches
+Weighing balance
+Catch cans, measuring jars
+
+FOOD ENGINEERING (New Department)
+FOOD PROCESS ENGINEERING LABORATORY
+Extruder
+Pasteurizer
+Hot air oven
+Hand refractometer
+Dessicator
+Dean and Stark's apparatus
+Cabinet dryer
+Soxhlet flask
+Distillation column
+Kjeldahl flask
+Distillation apparatus
+Microwave oven
+Cream separator
+Butter churner
+
+RENEWABLE ENERGY ENGINEERING (New Department)
+RENEWABLE ENERGY LAB (First)
+Battery Storage system with charge & Discharge control
+Micro wind Energy generation module
+PV emulator
+Solar panel trainer kit
+
+RENEWABLE ENERGY LABORATORY (Second)
+Muffle furnace
+Junkers gas calorimeter
+Bomb calorimeter
+Model of Biogas and Deenabandhu biogas plant
+Biogas scrubbing unit
+Gasifier - Lab Scale
+Pyrolysis unit
+Biogas/Producer gas dual fuel Engine
+Briquetting Machine - Lab Scale
+Automatic weather station
+Solar water heater
+Solar dryer
+Solar PV training kit
+Solar PV water pumping system
+
+MEDICAL ELECTRONICS
+Biomedical Instruments (from Industrial Instrumentation Lab)
+ECG trainer
+Pulse rate trainer
