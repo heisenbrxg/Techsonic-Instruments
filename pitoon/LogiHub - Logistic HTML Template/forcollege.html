@@ -1151,54 +1151,678 @@
                                                     <h6>Category</h6>
                                                 </div>
                                                 <div class="cs-link-list">
-                                                    <ul>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="CivilEngineering.html"><span>CIVIL
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="BioMedicalEngineering.html"><span>BIO MEDICAL
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="MedicalElectronics.html"><span>MEDICAL
-                                                                    ELECTRONICS</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="AerospaceEngineering.html"><span>AEROSPACE
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="AeronauticalEngineering.html"><span>AERONAUTICAL
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="AutomobileEngineering.html"><span>AUTOMOBILE
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="PolymerEngineering.html"><span>POLYMER
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="ProductionEngineering.html"><span>PRODUCTION
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="PetroleumEngineering.html"><span>PETROLEUM
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="MechatronicEngineering.html"><span>MECHATRONIC
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="MechanicalEngineering.html"><span>MECHANICAL
-                                                                    ENGINEERING</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="EEEEngineering.html"><span>ELECTRICAL &amp;
-                                                                    ELECTRONICS
-                                                                    ENGINEERING (EEE)</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="ECEEngineering.html"><span>ELECTRONICS &amp;
-                                                                    COMMUNICATION
-                                                                    ENGINEERING (ECE)</span></a></li>
-                                                        <li class="cs-text_b_line"><a
-                                                                href="EIEngineering.html"><span>ELECTRONICS &amp;
-                                                                    INSTRUMENTATION
-                                                                    ENGINEERING (E&amp;I)</span></a></li>
-                                                    </ul>
-                                                </div>
+
+<style>
+    .cat-accordion-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .cat-accordion-list>li {
+        margin-bottom: 4px;
+    }
+    .cat-parent-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 6px 0;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 12px;
+        color: inherit;
+        text-align: left;
+        gap: 6px;
+    }
+    .cat-parent-btn .cat-toggle-icon {
+        font-style: normal;
+        font-size: 14px;
+        transition: transform 0.25s;
+        flex-shrink: 0;
+    }
+    .cat-parent-btn.open .cat-toggle-icon {
+        transform: rotate(90deg);
+    }
+    .cat-parent-link {
+        flex: 1;
+        text-decoration: none;
+        color: inherit;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .cat-parent-link:hover {
+        color: var(--cs_accent_color, #e86c00);
+    }
+    .cat-sub-list {
+        list-style: disc;
+        padding-left: 16px;
+        margin: 2px 0 6px 0;
+        display: none;
+    }
+    .cat-sub-list.open {
+        display: block;
+    }
+    .cat-sub-list li {
+        margin-bottom: 2px;
+    }
+    .cat-sub-list li a {
+        font-size: 11px;
+        color: inherit;
+        text-decoration: none;
+    }
+    .cat-sub-list li a:hover {
+        color: var(--cs_accent_color, #e86c00);
+    }
+</style>
+<ul class="cat-accordion-list">
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="EIEngineering.html">ELECTRONICS & INSTRUMENTATION ENGINEERING (E&I)</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>ELECTRICAL CONTROL & INSTRUMENTATION LAB</strong></li>
+            <li><a href="#">PID Controller</a></li>
+            <li><a href="#">AC/DC Motor speed control (transfer function study) trainer</a></li>
+            <li><a href="#">Design of lead - lag compensation</a></li>
+            <li><a href="#">AC/DC Motor position control system</a></li>
+            <li><a href="#">Modelling of systems machines, sensors and transducers</a></li>
+            <li><a href="#">Stability analysis of liner system (stable/unstable)</a></li>
+            <li><a href="#">Synchro transmitter and receiver</a></li>
+            <li><a href="#">AC/DC Bridges (wheatstone, kelvin, Anderson, schering, etc.)</a></li>
+            <li><a href="#">Pressure measurement trainer</a></li>
+            <li><a href="#">Temperature measurement using RTD, thermistor</a></li>
+            <li><a href="#">Displacement measurement trainer using LVDT</a></li>
+            <li><a href="#">Optical measurement trainer using LDR, photodiode</a></li>
+            <li><a href="#">Strain measurement trainer</a></li>
+            <li><a href="#">Flow measurement trainer</a></li>
+            <li><a href="#">Power and energy measurement trainer</a></li>
+            <li><a href="#">Instrumentation amplifier trainer</a></li>
+            <li><a href="#">A/D and D/A converter module</a></li>
+            <li><a href="#">Stepper motor position control trainer</a></li>
+            <li><a href="#">Stepper motor and drive study trainer</a></li>
+            <li><a href="#">Servo motor study trainer</a></li>
+            <li><a href="#">AC/DC Motor and drive study trainer</a></li>
+            <li><strong>INSTRUMENTATION TRANSDUCERS AND MEASUREMENTS LAB</strong></li>
+            <li><a href="#">Displacement measurement using resistive sensor (LVRT)</a></li>
+            <li><a href="#">Strain measurement trainer</a></li>
+            <li><a href="#">Load measurement trainer</a></li>
+            <li><a href="#">Displacement measurement using LVDT</a></li>
+            <li><a href="#">Hall effect transducer trainer</a></li>
+            <li><a href="#">Speed measurement trainer using photoelectric/proximity sensor</a></li>
+            <li><a href="#">LDR characteristics trainer</a></li>
+            <li><a href="#">Thermistor characteristics trainer</a></li>
+            <li><a href="#">Thermocouple characteristics trainer [J,K,E Types]</a></li>
+            <li><a href="#">Step response of RTD and thermocouple</a></li>
+            <li><a href="#">Temperature measurement using RTD sensor (three & four leads)</a></li>
+            <li><a href="#">Fiber optic transducer for temperature measurement</a></li>
+            <li><a href="#">Bridges (wheatstone, schering, Maxwell, hay's, De-sauty, etc.)</a></li>
+            <li><a href="#">Calibration of single-phase energy meter and wattmeter</a></li>
+            <li><a href="#">Calibration of series and shunt type ohmmeters</a></li>
+            <li><a href="#">Calibration of ammeter and voltmeter using potentiometer</a></li>
+            <li><a href="#">Angular displacement using resistive and capacitive transducer</a></li>
+            <li><a href="#">Calibrator (RTD & thermocouple / temperature/ pressure)</a></li>
+            <li><a href="#">Light intensity measurement trainer [LDR/ photo diode & transistor]</a></li>
+            <li><a href="#">Muffle furnace</a></li>
+            <li><a href="#">Smoke sensor trainer</a></li>
+            <li><a href="#">Bourdon tube study trainer</a></li>
+            <li><a href="#">Humidity and temperature measurement trainer</a></li>
+            <li><a href="#">Piezo electronic transducer trainer</a></li>
+            <li><a href="#">Bellows measurement trainer</a></li>
+            <li><a href="#">Instrumentation amplifier trainer</a></li>
+            <li><a href="#">Transducer trainer (strain, load, torque, pressure, etc.)</a></li>
+            <li><a href="#">Transducer trainer (sound, temperature, level, halleffect, optical, etc.)</a></li>
+            <li><a href="#">Strain (rosette) measurement trainer</a></li>
+            <li><strong>INDUSTRIAL INSTRUMENTATION LAB</strong></li>
+            <li><a href="#">DC Motor speed measurement trainer</a></li>
+            <li><a href="#">Vibration measurement trainer</a></li>
+            <li><a href="#">Torque measurement trainer</a></li>
+            <li><a href="#">Calibration of ammeter, voltmeter, wattmeter using multifunction calibrator</a></li>
+            <li><a href="#">Calibration of pressure gauge using dead weight tester</a></li>
+            <li><a href="#">Discharge coefficient of orifice plate</a></li>
+            <li><a href="#">Calibration of rotameter</a></li>
+            <li><a href="#">Electromagnetic flow meter study trainer</a></li>
+            <li><a href="#">Temperature measurement using IR thermometer and IC sensor</a></li>
+            <li><a href="#">Redwood/ saybolt viscometer</a></li>
+            <li><a href="#">Vacuum pressure measurement trainer</a></li>
+            <li><a href="#">Level measurement using DP transmitter/capacitance LT</a></li>
+            <li><a href="#">Moisture and humidity transducer trainer</a></li>
+            <li><a href="#">UV/IR spectro photometer</a></li>
+            <li><a href="#">pH/ conductivity measurement trainer</a></li>
+            <li><a href="#">(Note: Items 16 and 17 moved to MEDICAL ELECTRONICS)</a></li>
+            <li><strong>PROCESS CONTROL LAB</strong></li>
+            <li><a href="#">Flow process controller</a></li>
+            <li><a href="#">Level process controller</a></li>
+            <li><a href="#">Temperature process controller</a></li>
+            <li><a href="#">Pressure process controller</a></li>
+            <li><a href="#">Interacting and Non-interacting system</a></li>
+            <li><a href="#">Temperature ON/OFF controller</a></li>
+            <li><a href="#">Control valve positioner trainer</a></li>
+            <li><a href="#">Cascade control trainer (flow and level/ flow and temperature)</a></li>
+            <li><a href="#">Control valve characteristics trainer (Equal%, liner%, ON/OFF)</a></li>
+            <li><a href="#">Multiprocess control trainer (cascade, ratio feedback and feed forward)</a></li>
+            <li><a href="#">AC and DC Drives study trainer</a></li>
+            <li><a href="#">Auto tuning of PID controller</a></li>
+            <li><a href="#">Analog/ digital PID controller</a></li>
+            <li><a href="#">Smart transducer</a></li>
+            <li><strong>PLC & APPLICATION LAB</strong></li>
+            <li><a href="#">SCADA software</a></li>
+            <li><a href="#">Programmable logic controller trainer (AB/ABB/Siemens/Omron etc.)</a></li>
+            <li><a href="#">Distributed control system (DCS)</a></li>
+            <li><a href="#">PLC Based bottle filling trainer</a></li>
+            <li><a href="#">PLC Based stamping machine trainer</a></li>
+            <li><a href="#">PLC Based Traffic light controller</a></li>
+            <li><a href="#">PLC Based AC/DC Motor speed control system</a></li>
+            <li><a href="#">PLC Based Drilling machine trainer</a></li>
+            <li><a href="#">PLC Based water level (filling / draining) controller</a></li>
+            <li><a href="#">PLC Based Batch processing system</a></li>
+            <li><a href="#">PLC Based Temperature controller</a></li>
+            <li><a href="#">PLC Based pressure control system</a></li>
+            <li><a href="#">PLC Based Conveyor control system</a></li>
+            <li><a href="#">PLC Based lift control system</a></li>
+            <li><a href="#">PLC Based Electro pneumatic trainer</a></li>
+            <li><a href="#">PLC Based Car parking system</a></li>
+            <li><a href="#">PLC Based water flow monitoring and control system</a></li>
+            <li><a href="#">PLC Based Direct-on-Line starter / Star-delta starter kit</a></li>
+            <li><a href="#">PLC Based Stair case light controller</a></li>
+            <li><a href="#">PLC Based control Circuit for Forward Reverse Operation</a></li>
+            <li><strong>INSTRUMENTATION SYSTEM DESIGN LAB</strong></li>
+            <li><a href="#">Design of current voltage & voltage current converter trainer</a></li>
+            <li><a href="#">Design of signal conditioning for bonded strain gauge</a></li>
+            <li><a href="#">Design of instrumentation amplifier / RTD signal conditioning trainer</a></li>
+            <li><a href="#">Design of regulated power supply</a></li>
+            <li><a href="#">Linearization of thermocouple</a></li>
+            <li><a href="#">Design of orifice plate and rotometer</a></li>
+            <li><a href="#">Control valve study trainer (cut section)</a></li>
+            <li><a href="#">Loop analyzer</a></li>
+            <li><strong>ADVANCED RESEARCH PROCESS CONTROL LAB</strong></li>
+            <li><a href="#">Conical (single / two / three) tank system</a></li>
+            <li><a href="#">spherical (single / two / three) tank system</a></li>
+            <li><a href="#">Conical and spherical tank system</a></li>
+            <li><a href="#">Four tank system / three tank system</a></li>
+            <li><a href="#">Multiple input and multiple output system</a></li>
+            <li><a href="#">Multi process control system (flow, level, pressure, temperature)</a></li>
+            <li><a href="#">Multi tank system</a></li>
+            <li><a href="#">pH control trainer</a></li>
+            <li><a href="#">Continuous stirrer tank reactor system (CSTR)</a></li>
+            <li><a href="#">Distributed control system (AB, ABB, Siemens)</a></li>
+            <li><a href="#">Temperature process trainer (heat exchanger)</a></li>
+            <li><strong>ADDITIONAL PRODUCTS (Instrumentation)</strong></li>
+            <li><a href="#">Design of seebeck effect study trainer</a></li>
+            <li><a href="#">Wireless(zigbee) based transducer trainer (temperature, strain, LVDT, pressure, etc.)</a></li>
+            <li><a href="#">Dry block temperature calibrator</a></li>
+            <li><a href="#">1st and 2nd order system using temperature controller U-tube manometer</a></li>
+            <li><a href="#">Temperature process controller using heat exchanger</a></li>
+            <li><a href="#">Flow measurement using turbine / orifice/venturi/pitot tube/ ultrasonic</a></li>
+            <li><a href="#">Level measurement using ultra sonic/ load cell / float/DP transmitter</a></li>
+            <li><a href="#">Motorized control valve study trainer</a></li>
+            <li><a href="#">PC[MATLAB/LABVIEW] Based transducer kit (strain, LVDT, Load, Torque, etc.)</a></li>
+            <li><a href="#">P/I & I/P Study trainer</a></li>
+            <li><a href="#">Flapper Nozzle System</a></li>
+            <li><a href="#">XY Recorder</a></li>
+            <li><a href="#">Strip chart recorder</a></li>
+            <li><strong>SOFTWARE</strong></li>
+            <li><a href="#">SCADA</a></li>
+            <li><strong>TESTING AND MEASURING INSTRUMENTS</strong></li>
+            <li><a href="#">Variable power supply [single/dual] [(0-30V) 1A-5A]</a></li>
+            <li><a href="#">High voltage power supply (0-300V/2A)</a></li>
+            <li><a href="#">Fixed power supply (+ or - 5V, + or - 12V, + or - 15V)</a></li>
+            <li><a href="#">Cathode ray oscilloscope (CRO) 20MHz to 200MHz</a></li>
+            <li><a href="#">Function generator (FG) 1MHz to 10MHz</a></li>
+            <li><a href="#">Digital storage oscilloscope (DSO) 20MHz to 200MHz</a></li>
+            <li><a href="#">Digital frequency meter / LCR Meter</a></li>
+            <li><a href="#">Decade inductance, capacitance, resistance box (4,5,6,7 dial)</a></li>
+            <li><a href="#">Analog desktop ammeter / voltmeter / wattmeter (various ranges)</a></li>
+            <li><a href="#">Analog portable ammeter / voltmeter / wattmeter (various ranges)</a></li>
+            <li><a href="#">Digital ammeter / voltmeter / wattmeter (various ranges)</a></li>
+            <li><a href="#">Digital / analog multimeter & stop watch</a></li>
+            <li><a href="#">Clamp meter / range finder</a></li>
+            <li><a href="#">Analog / digital watt meter (energy meter)</a></li>
+            <li><a href="#">Digital sound level meter / LUX meter/vibration meter</a></li>
+            <li><a href="#">Analog / digital tachometer (contact or non contact type)</a></li>
+            <li><a href="#">Auto transformer (single phase, three phase)</a></li>
+            <li><a href="#">Resistance / inductive / capacitive load bank (various range)</a></li>
+            <li><a href="#">Lamp load bank (various ranges)</a></li>
+            <li><a href="#">Digital stroboscope / Mcleod gauge</a></li>
+            <li><strong>Additional E&I Products (from first MORE PRODUCTS)</strong></li>
+            <li><a href="#">MATLAB Based AC/DC motor speed control trainer</a></li>
+            <li><a href="#">MATLAB Based AC/DC motor position control trainer</a></li>
+            <li><a href="#">Light intensity control trainer</a></li>
+            <li><a href="#">PLC Based Automatic Rotor Resistance Starter trainer</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="EEEEngineering.html">ELECTRICAL & ELECTRONICS ENGINEERING (EEE)</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>POWER ELECTRONICS AND DRIVES LAB</strong></li>
+            <li><a href="#">SCR gate pulse generation trainer</a></li>
+            <li><a href="#">Characteristics of SCR, TRIAC, MOSFET, GTO, IGCT AND IGBT Trainer</a></li>
+            <li><a href="#">Single phase half and fully controlled converter trainer</a></li>
+            <li><a href="#">Step down and step up chopper trainer</a></li>
+            <li><a href="#">IGBT Based single phase inverter trainer</a></li>
+            <li><a href="#">IGBT Based three phase inverter trainer</a></li>
+            <li><a href="#">Single phase AC Voltage controller trainer</a></li>
+            <li><a href="#">Single & Three phase PWM Inverter</a></li>
+            <li><a href="#">Single phase cyclo converter trainer</a></li>
+            <li><a href="#">Single phase AC Voltage controller using TRIAC & DIAC</a></li>
+            <li><a href="#">SCR Firing Circuit using R,RC & UJT</a></li>
+            <li><a href="#">SMPS trainer</a></li>
+            <li><a href="#">Characteristics of PMBLDC Motor</a></li>
+            <li><strong>ELECTRICAL MACHINE LAB</strong></li>
+            <li><a href="#">Dc shunt motor with load</a></li>
+            <li><a href="#">DC shunt motor with three phase alternator</a></li>
+            <li><a href="#">DC series motor with load</a></li>
+            <li><a href="#">DC compound motor with load</a></li>
+            <li><a href="#">Single & three phase induction motor with load</a></li>
+            <li><a href="#">DC shun motor with dc compound generator</a></li>
+            <li><a href="#">DC Shunt motor with DC shunt generator</a></li>
+            <li><a href="#">Synchronous induction motor with load</a></li>
+            <li><a href="#">DC shunt motor squirrel gauge induction motor</a></li>
+            <li><a href="#">Three phase squirrel gauge induction motor</a></li>
+            <li><strong>Additional EEE Products (from first MORE PRODUCTS)</strong></li>
+            <li><a href="#">Speed control of three phase AC induction motor</a></li>
+            <li><a href="#">Testing of MCB and ELCB Trainer</a></li>
+            <li><a href="#">Forward & reverse operation trainer</a></li>
+            <li><a href="#">Single phase preventer trainer</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="ECEEngineering.html">ELECTRONICS & COMMUNICATION ENGINEERING (ECE)</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>MICROPROCESSOR AND MICROCONTROLLER LAB</strong></li>
+            <li><a href="#">8085/8086 microprocessor kit</a></li>
+            <li><a href="#">8081 microcontroller kit</a></li>
+            <li><a href="#">8255/8251/8259 interface board</a></li>
+            <li><a href="#">Traffic light interface board</a></li>
+            <li><a href="#">Stepper motor interface board</a></li>
+            <li><a href="#">Digital control interface board</a></li>
+            <li><a href="#">Matrix key board interface board</a></li>
+            <li><a href="#">Printer status interface board</a></li>
+            <li><a href="#">Serial interface and parallel interface board</a></li>
+            <li><a href="#">A/D AND D/A interface board</a></li>
+            <li><a href="#">DC/AC Motor interface board</a></li>
+            <li><a href="#">Seven segment interface board</a></li>
+            <li><a href="#">Digital I/O interface board</a></li>
+            <li><a href="#">Digital IC trainer analog IC tester</a></li>
+            <li><a href="#">Digital IC tester / analog IC tester</a></li>
+            <li><strong>COMMUNICATION</strong></li>
+            <li><a href="#">Analog communication trainer [AM&FM modulation / demodulation, etc.]</a></li>
+            <li><a href="#">Digital communication trainer [PAM/PPM/PWM/ASK/FSK etc.]</a></li>
+            <li><strong>ADVANCE COMMUNICATION LAB</strong></li>
+            <li><a href="#">Antenna / RADAR trainer</a></li>
+            <li><a href="#">LAN Trainer kit / OFT trainer kit</a></li>
+            <li><a href="#">SDR (software defined radio) trainer</a></li>
+            <li><strong>VLSI / EMBEDDED LAB</strong></li>
+            <li><a href="#">8051 embedded development</a></li>
+            <li><a href="#">ARM development board</a></li>
+            <li><a href="#">VLSI Kit</a></li>
+            <li><a href="#">Arduino based raspberry Pi kit</a></li>
+            <li><a href="#">PIC (16F877) Development kit [Zigbee/ wifi communication]</a></li>
+            <li><a href="#">AVR development kit / MSP - 430 development kit</a></li>
+            <li><a href="#">MSP - 430 development kit</a></li>
+            <li><strong>SOFTWARE</strong></li>
+            <li><a href="#">E-sim / Scilab</a></li>
+            <li><a href="#">P-Spice / MATLAB</a></li>
+            <li><a href="#">Cadence / cadence pspsie</a></li>
+            <li><a href="#">MATLAB / Netsim</a></li>
+            <li><strong>ADDITIONAL ECE PRODUCTS</strong></li>
+            <li><a href="#">Spartan-6 FPGA development kit</a></li>
+            <li><a href="#">IOT development kit</a></li>
+            <li><a href="#">Wein bridge oscillator</a></li>
+            <li><a href="#">Image processing development kit</a></li>
+            <li><a href="#">Tiva C series Board</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="MechanicalEngineering.html">MECHANICAL ENGINEERING</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>FLUID MECHANICS LAB</strong></li>
+            <li><a href="#">Discharge co-efficient of orifice meter</a></li>
+            <li><a href="#">Discharge co-efficient of venturi meter</a></li>
+            <li><a href="#">Flow meter apparatus</a></li>
+            <li><a href="#">Pipe friction apparatus</a></li>
+            <li><a href="#">Reciprocating pump test rig</a></li>
+            <li><a href="#">Gear pump / vane pump test rig</a></li>
+            <li><a href="#">Centrifugal pump</a></li>
+            <li><a href="#">Submersible pump</a></li>
+            <li><a href="#">Pelton wheel turbine test rig</a></li>
+            <li><a href="#">Francis turbine test rig</a></li>
+            <li><a href="#">Kaplan turbine test rig</a></li>
+            <li><a href="#">Notch apparatus</a></li>
+            <li><strong>KINEMETICS AND DYNAMICS LAB</strong></li>
+            <li><a href="#">Cam analyzer</a></li>
+            <li><a href="#">Motorized gyroscope</a></li>
+            <li><a href="#">Whirling of shaft apparatus</a></li>
+            <li><a href="#">Governor apparatus</a></li>
+            <li><a href="#">Dynamic balancing machine</a></li>
+            <li><a href="#">Two rotor system</a></li>
+            <li><a href="#">Spring mass system</a></li>
+            <li><a href="#">Torsional vibration of single rotor system setup</a></li>
+            <li><a href="#">Turn table apparatus</a></li>
+            <li><a href="#">Transverse vibration setup</a></li>
+            <li><strong>THERMAL ENGINEERING</strong></li>
+            <li><a href="#">Four stroke single cylinder diesel engine (cut section)</a></li>
+            <li><a href="#">Two stroke single cylinder petrol engine (cut section)</a></li>
+            <li><a href="#">Four stroke single cylinder diesel engine (electrical / hydraulic/mechanical)</a></li>
+            <li><a href="#">Four stroke single cylinder petrol engine</a></li>
+            <li><a href="#">Four stroke three cylinder diesel engine (cut section)</a></li>
+            <li><a href="#">Multi cylinder petrol engine</a></li>
+            <li><a href="#">Flash point and fire point apparatus (open/closed cup)</a></li>
+            <li><a href="#">Data acquisition system (for above engines)</a></li>
+            <li><a href="#">Gas analyzer (4 gas, 5gas)</a></li>
+            <li><a href="#">PC Based engine trainer (P-V & P-Q)</a></li>
+            <li><strong>THERMAL ENGINEERING LAB-II</strong></li>
+            <li><a href="#">Guarded plate apparatus</a></li>
+            <li><a href="#">Lagged pipe apparatus</a></li>
+            <li><a href="#">Natural convection apparatus</a></li>
+            <li><a href="#">Forced convection apparatus</a></li>
+            <li><a href="#">Composite wall apparatus</a></li>
+            <li><a href="#">Insulating powder apparatus</a></li>
+            <li><a href="#">Pin-Fin apparatus</a></li>
+            <li><a href="#">Stefan-Boltzmann apparatus</a></li>
+            <li><a href="#">Emissivity measurement apparatus</a></li>
+            <li><a href="#">Heat exchange apparatus (parallel/counter)</a></li>
+            <li><a href="#">HR refrigeration test rig</a></li>
+            <li><a href="#">Reciprocating air compressor study trainer (two/single stage)</a></li>
+            <li><a href="#">Cooling tower apparatus</a></li>
+            <li><a href="#">Drop and film wise apparatus</a></li>
+            <li><strong>METROLOGY AND MEASUREMENT LAB</strong></li>
+            <li><a href="#">Micrometer / vernier caliper</a></li>
+            <li><a href="#">Slip gauge / sine bar</a></li>
+            <li><a href="#">Profile projector / Tool maker's microscope</a></li>
+            <li><a href="#">Gear tooth vernier caliper/ vernier height gauge</a></li>
+            <li><a href="#">Floating carriage micrometer</a></li>
+            <li><a href="#">Coordinate measuring machine</a></li>
+            <li><a href="#">Comparator (mechanical/electrical/pneumatic)</a></li>
+            <li><a href="#">Surface finishing measuring equipment</a></li>
+            <li><a href="#">Bore diameter measurement using telescope gauge/micrometer</a></li>
+            <li><a href="#">Torque measurement using load cell</a></li>
+            <li><a href="#">Torque measurement trainer</a></li>
+            <li><a href="#">Temperature measurement trainer (RTD, Thermocouple)</a></li>
+            <li><a href="#">LVDT Trainer</a></li>
+            <li><a href="#">Autocollimator</a></li>
+            <li><a href="#">Metallurgical microscope</a></li>
+            <li><strong>REFRIGERATION LAB</strong></li>
+            <li><a href="#">Refrigeration test rig</a></li>
+            <li><a href="#">Duct air conduct test rig</a></li>
+            <li><a href="#">Split AC test rig</a></li>
+            <li><a href="#">Window AC test rig</a></li>
+            <li><a href="#">Air cooler test rig</a></li>
+            <li><a href="#">Water test rig</a></li>
+            <li><a href="#">Vapour compressor test rig</a></li>
+            <li><strong>SOFTWARE</strong></li>
+            <li><a href="#">Ansys</a></li>
+            <li><a href="#">Automation studio software</a></li>
+            <li><a href="#">Hydrosim and Pneumosim software</a></li>
+            <li><strong>ADDITIONAL MECHANICAL PRODUCTS</strong></li>
+            <li><a href="#">Prony brake dynamometer</a></li>
+            <li><a href="#">Pneumatic & hydraulic braking system [Two & Four Wheelers]</a></li>
+            <li><a href="#">MATLAB Based basic electro pneumatic trainer</a></li>
+            <li><strong>MECHINICAL ENGINEERIG LAB</strong></li>
+            <li><a href="#">Tension test / compression test</a></li>
+            <li><a href="#">Deflection test</a></li>
+            <li><a href="#">Hardness test (Rockwell, brinell, vickers)</a></li>
+            <li><a href="#">Spring test / torsion test / impact test</a></li>
+            <li><strong>FLUID MECHINICS LAB</strong></li>
+            <li><a href="#">Wire & notches apparatus</a></li>
+            <li><a href="#">Flow through straight and annular pipe apparatus</a></li>
+            <li><a href="#">Open drum orifice apparatus</a></li>
+            <li><a href="#">Pipe and fitting apparatus</a></li>
+            <li><a href="#">Helical and spiral coil apparatus</a></li>
+            <li><a href="#">Fluidized bed apparatus</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="MechatronicEngineering.html">MECHATRONIC ENGINEERING</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>MECHATRONICS LAB</strong></li>
+            <li><a href="#">8085 Microprocessor kit</a></li>
+            <li><a href="#">8085 Microcontroller kit</a></li>
+            <li><a href="#">Stepper motor controller using Microprocessor/ Microcontroller</a></li>
+            <li><a href="#">Various transducer trainer (temperature, strain, pressure)</a></li>
+            <li><a href="#">Hydraulic trainer</a></li>
+            <li><a href="#">Pneumatic trainer</a></li>
+            <li><a href="#">Electro Pneumatic trainer</a></li>
+            <li><a href="#">Programmable logic controller trainer</a></li>
+            <li><a href="#">Image processing system</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="CivilEngineering.html">CIVIL ENGINEERING</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>MECHINICAL / FLUID & SOIL OPERATION / GELOGY LAB</strong></li>
+            <li><a href="#">Sieve shaker</a></li>
+            <li><a href="#">Leaf filter</a></li>
+            <li><a href="#">Plate and frame press</a></li>
+            <li><a href="#">Sedimentation jar</a></li>
+            <li><a href="#">Crusher (Jaw, Ball, Drop Weight)</a></li>
+            <li><a href="#">Ball / Hammer Mill</a></li>
+            <li><a href="#">Cyclone separator</a></li>
+            <li><a href="#">Elutriator</a></li>
+            <li><a href="#">Test sieves</a></li>
+            <li><a href="#">Air permeability apparatus</a></li>
+            <li><a href="#">Petrological microscope</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="ChemicalEngineering.html">CHEMICAL ENGINEERING (New Department)</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>HEAT TRANSFER LAB</strong></li>
+            <li><a href="#">Open pan evaporator</a></li>
+            <li><a href="#">Boiler</a></li>
+            <li><a href="#">Packed bed column</a></li>
+            <li><a href="#">Double pipe heat exchanger apparatus</a></li>
+            <li><a href="#">Bar and finned tube heat exchanger apparatus</a></li>
+            <li><a href="#">Condenser apparatus (vertical / horizontal)</a></li>
+            <li><a href="#">Jacketed vessel apparatus</a></li>
+            <li><a href="#">Agitated vessel apparatus</a></li>
+            <li><a href="#">Shell and tube heat exchanger</a></li>
+            <li><strong>MASS TRANSFER LAB</strong></li>
+            <li><a href="#">Distillation column [simple / steam]</a></li>
+            <li><a href="#">Packed distillation column</a></li>
+            <li><a href="#">Liquid-liquid extractor</a></li>
+            <li><a href="#">Vacuum dryer</a></li>
+            <li><a href="#">Tray dryer / rotary dryer</a></li>
+            <li><a href="#">Ion exchanger column</a></li>
+            <li><a href="#">Rotating Disc contactor</a></li>
+            <li><a href="#">Cooling tower apparatus</a></li>
+            <li><a href="#">Absorption column</a></li>
+            <li><strong>CHEMICAL REACTION LAB</strong></li>
+            <li><a href="#">Batch reactor</a></li>
+            <li><a href="#">Plug flow reactor</a></li>
+            <li><a href="#">CSTR</a></li>
+            <li><a href="#">Sono-chemical reactor</a></li>
+            <li><a href="#">Photo-chemical reactor</a></li>
+            <li><a href="#">Packed bed reactor</a></li>
+            <li><strong>PROCESS CONTROL LAB (Chemical)</strong></li>
+            <li><a href="#">U tube manometer with controller</a></li>
+            <li><a href="#">Interacting and non-interacting system</a></li>
+            <li><a href="#">Temperature ON/OFF controller</a></li>
+            <li><a href="#">Control valve characteristics trainer</a></li>
+            <li><a href="#">Pressure process controller</a></li>
+            <li><a href="#">Temperature process controller</a></li>
+            <li><a href="#">Level / flow process controller</a></li>
+            <li><a href="#">Cascade control system</a></li>
+            <li><strong>SOFTWARE</strong></li>
+            <li><a href="#">ASPEN PLUS / HYSYS</a></li>
+            <li><a href="#">Ansy / sadpro</a></li>
+            <li><strong>LABORATORY GLASSWARE</strong></li>
+            <li><a href="#">Glass product [pipette/burette/beaker/jar/etc.]</a></li>
+            <li><a href="#">Decanting column</a></li>
+            <li><a href="#">Soxhlet extractor</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="PetroleumEngineering.html">PETROLEUM ENGINEERING</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>PPT/ CHEMICAL & PETRO CHEMICAL ANALYSIS LAB</strong></li>
+            <li><a href="#">Abel's flash point apparatus</a></li>
+            <li><a href="#">Pensky marten flash point apparatus</a></li>
+            <li><a href="#">Viscometer (redwood, saybolt, engler, dynamic)</a></li>
+            <li><a href="#">Cleveland open cup apparatus</a></li>
+            <li><a href="#">Cloud and pour apparatus</a></li>
+            <li><a href="#">Flash & Fire point apparatus</a></li>
+            <li><a href="#">Aniline point apparatus</a></li>
+            <li><a href="#">Bomb calorimeter apparatus</a></li>
+            <li><a href="#">Orsat apparatus</a></li>
+            <li><a href="#">Carbon residue apparatus</a></li>
+            <li><a href="#">Uv spectrophotometer</a></li>
+            <li><a href="#">Gas chromatography</a></li>
+            <li><a href="#">Abby refractometer</a></li>
+            <li><a href="#">Reflection setup</a></li>
+            <li><a href="#">Weighing balance</a></li>
+            <li><a href="#">Melting point apparatus</a></li>
+            <li><a href="#">Magnetic / mechanical stirrer</a></li>
+            <li><a href="#">Heating mantel</a></li>
+            <li><a href="#">Muffle furnace / hot air oven</a></li>
+            <li><a href="#">Vacuum pump</a></li>
+            <li><a href="#">Bunsen burner</a></li>
+            <li><a href="#">Deep freezer</a></li>
+            <li><a href="#">Incubator (COD / BOD)</a></li>
+            <li><a href="#">Shaker</a></li>
+            <li><a href="#">pH meter / conductivity meter</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="AgriculturalEngineering.html">AGRICULTURAL ENGINEERING (New Department)</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>AGRICULTURE ENGINEERING: OPERATION AND MAINTENANCE OF FARM MACHINERY LABORATORY</strong></li>
+            <li><a href="#">Tractor</a></li>
+            <li><a href="#">Power tiller</a></li>
+            <li><a href="#">Disc plough</a></li>
+            <li><a href="#">Disc harrow</a></li>
+            <li><a href="#">Multi type cultivator</a></li>
+            <li><a href="#">Paddy Transplanter</a></li>
+            <li><a href="#">Seed drill</a></li>
+            <li><a href="#">Spayer</a></li>
+            <li><a href="#">Mower</a></li>
+            <li><a href="#">Weeder</a></li>
+            <li><a href="#">Combine harvester</a></li>
+            <li><strong>POST HARVEST ENGINEERING LABORATORY</strong></li>
+            <li><a href="#">Hot air oven</a></li>
+            <li><a href="#">Grain moisture meter</a></li>
+            <li><a href="#">Porosity apparatus</a></li>
+            <li><a href="#">Coefficient of friction apparatus</a></li>
+            <li><a href="#">Angle of repose</a></li>
+            <li><a href="#">Round type and Lype</a></li>
+            <li><a href="#">Paddy thresher</a></li>
+            <li><a href="#">Groundnut decorticator Sheller</a></li>
+            <li><a href="#">Maize Sheller</a></li>
+            <li><a href="#">Thin layer dryer</a></li>
+            <li><a href="#">LSU dryer</a></li>
+            <li><a href="#">Bucket elevator</a></li>
+            <li><a href="#">screw conveyor</a></li>
+            <li><a href="#">Rubber roll Sheller</a></li>
+            <li><a href="#">Oil expeller</a></li>
+            <li><strong>IRRIGATION FIELD LABORATORY</strong></li>
+            <li><a href="#">Meteorological lab with Cup counter anemometer, Sunshine recorder, Open pan vaporimeter, Stevenson's screen - Dry bulb, wet bulb thermometers, recording and nonrecording type rain gauge</a></li>
+            <li><a href="#">Double ring infiltrometer</a></li>
+            <li><a href="#">Digital infiltrometer</a></li>
+            <li><a href="#">Parshall flume, cut throat flume</a></li>
+            <li><a href="#">Vnotch, Rectangular notch and trapezoidal notch</a></li>
+            <li><a href="#">Drip irrigation system with all accessories</a></li>
+            <li><a href="#">Sprinkler irrigation system with all accessories</a></li>
+            <li><a href="#">Required number of stop watches</a></li>
+            <li><a href="#">Weighing balance</a></li>
+            <li><a href="#">Catch cans, measuring jars</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="FoodEngineering.html">FOOD ENGINEERING (New Department)</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>FOOD PROCESS ENGINEERING LABORATORY</strong></li>
+            <li><a href="#">Extruder</a></li>
+            <li><a href="#">Pasteurizer</a></li>
+            <li><a href="#">Hot air oven</a></li>
+            <li><a href="#">Hand refractometer</a></li>
+            <li><a href="#">Dessicator</a></li>
+            <li><a href="#">Dean and Stark's apparatus</a></li>
+            <li><a href="#">Cabinet dryer</a></li>
+            <li><a href="#">Soxhlet flask</a></li>
+            <li><a href="#">Distillation column</a></li>
+            <li><a href="#">Kjeldahl flask</a></li>
+            <li><a href="#">Distillation apparatus</a></li>
+            <li><a href="#">Microwave oven</a></li>
+            <li><a href="#">Cream separator</a></li>
+            <li><a href="#">Butter churner</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="RenewableEnergyEngineering.html">RENEWABLE ENERGY ENGINEERING (New Department)</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>RENEWABLE ENERGY LAB (First)</strong></li>
+            <li><a href="#">Battery Storage system with charge & Discharge control</a></li>
+            <li><a href="#">Micro wind Energy generation module</a></li>
+            <li><a href="#">PV emulator</a></li>
+            <li><a href="#">Solar panel trainer kit</a></li>
+            <li><strong>RENEWABLE ENERGY LABORATORY (Second)</strong></li>
+            <li><a href="#">Muffle furnace</a></li>
+            <li><a href="#">Junkers gas calorimeter</a></li>
+            <li><a href="#">Bomb calorimeter</a></li>
+            <li><a href="#">Model of Biogas and Deenabandhu biogas plant</a></li>
+            <li><a href="#">Biogas scrubbing unit</a></li>
+            <li><a href="#">Gasifier - Lab Scale</a></li>
+            <li><a href="#">Pyrolysis unit</a></li>
+            <li><a href="#">Biogas/Producer gas dual fuel Engine</a></li>
+            <li><a href="#">Briquetting Machine - Lab Scale</a></li>
+            <li><a href="#">Automatic weather station</a></li>
+            <li><a href="#">Solar water heater</a></li>
+            <li><a href="#">Solar dryer</a></li>
+            <li><a href="#">Solar PV training kit</a></li>
+            <li><a href="#">Solar PV water pumping system</a></li>
+        </ul>
+    </li>
+    <li>
+        <button class="cat-parent-btn" onclick="toggleCat(this)">
+            <a class="cat-parent-link" href="MedicalElectronics.html">MEDICAL ELECTRONICS</a>
+            <i class="cat-toggle-icon">&#9656;</i>
+        </button>
+        <ul class="cat-sub-list">
+            <li><strong>Biomedical Instruments (from Industrial Instrumentation Lab)</strong></li>
+            <li><a href="#">ECG trainer</a></li>
+            <li><a href="#">Pulse rate trainer</a></li>
+        </ul>
+    </li>
+    <li class="cs-text_b_line"><a href="BioMedicalEngineering.html"><span>BIO MEDICAL ENGINEERING</span></a></li>
+    <li class="cs-text_b_line"><a href="AerospaceEngineering.html"><span>AEROSPACE ENGINEERING</span></a></li>
+    <li class="cs-text_b_line"><a href="AeronauticalEngineering.html"><span>AERONAUTICAL ENGINEERING</span></a></li>
+    <li class="cs-text_b_line"><a href="AutomobileEngineering.html"><span>AUTOMOBILE ENGINEERING</span></a></li>
+    <li class="cs-text_b_line"><a href="PolymerEngineering.html"><span>POLYMER ENGINEERING</span></a></li>
+    <li class="cs-text_b_line"><a href="ProductionEngineering.html"><span>PRODUCTION ENGINEERING</span></a></li>
+</ul>
+</div>
                                             </div>
                                         </div>
                                         <div class="cs-widget-item cs-widget-leftborder">
@@ -1357,7 +1981,17 @@
     </span>
     <!-- End Scrollup -->
 
-    <!-- Script -->
+    
+    <!-- Category Accordion Script -->
+    <script>
+        function toggleCat(btn) {
+            btn.classList.toggle('open');
+            var subList = btn.nextElementSibling;
+            if (subList) subList.classList.toggle('open');
+        }
+    </script>
+
+<!-- Script -->
     <script src="assets/js/plugins/jquery-3.7.0.min.js"></script>
     <script src="assets/js/plugins/swiper.min.js"></script>
     <script src="assets/js/plugins/SplitText.min.js"></script>
